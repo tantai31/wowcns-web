@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Hardy, GHT">
+    <meta name="generator" content="Hardy">
+    <title>WOWSNC Vietnam</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./assets/css/header.css" rel="stylesheet">
+    <link href="./assets/css/footer.css" rel="stylesheet">
+    <link href="./assets/css/modules.css" rel="stylesheet">
+    <link href="./assets/css/single-page-home.css" rel="stylesheet">
+    <link href="./assets/css/single-product.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container container-1">
+            <div class="col_1">
+                <div class="mobile-toggle-wrapper">
+                    <div class="mobile-toggle" id="mobile-toggle">
+                        <div class="cross_hamburger_menu">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-2 main-menu-wrapper">
+            <div class="container">
+                <ul class="main_menu_nav">
+                    <li class="menu-item current-menu-item">
+                        <a id="test" href="index.html">
+                            <div>TRANG CHỦ</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="gioithieu.html">
+                            <div>GIỚI THIỆU</div>
+                        </a>
+                    </li>
+                    <li class="menu-item" >
+                        <a href="dichvu.html"  class="active">
+                            <div>DỊCH VỤ</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <div>WEBSITE & WOWNET</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <div>API DOCUMENT</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <div>LIÊN HỆ</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <div>
+                                <ol>
+                                    0931-311-080
+                                </ol>
+                                <ol>
+                                    Thứ 2 - Thứ 6: 08:00 - 17:00
+                                </ol>
+                                <ol>
+                                    ceo@wowcns.co.kr
+                                </ol>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- End Header -->
+
+    <!-- Main Content -->
+
+    <div class="bg-black">
+        <div class="container develop-soft">
+            <div class=" mb-5">
+                Phát Triển <span class="color-wow-blue software"> Phần Mềm</span>
+            </div>
+            <div class="value color-white">
+                Mang lại những <span class="color-wow-orange"> giá trị</span> cốt lõi cho người sử dụng
+            </div>
+            <div class="computer-gif">
+                <img src="./assets/img/computer-gif.gif" alt="computer" class="img-computer">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sidebar Helper -->
+    <div class="sidebar-helper goTop">
+        <div href="#" class="sidebar-item">
+            <img src="./assets/img/wowcns-vn-letter-o.png" alt="">
+        </div>
+    </div>
+    <div class="text-center bg-black">
+        <img src="./assets/img/img-raw-dichvu.png" alt="img mũi tên">
+    </div>
+    <div class=" bg-black">
+        <div class="container">
+            <div class=" mb-5 color-white">
+                 <span  class="text-process color-wow-blue me-3">Quy trình </span>phát triển <span class="color-wow-orange ms-3"> phần mềm</span>
+            </div>
+            <div class="row color-white justify-content-between">
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class=" color-wow-orange"><span class="color-wow-blue">1</span>.</div>
+                    <div class=" me-5 mb-3">
+                        <img src="./assets/img/line-arrow.svg" alt="line" class="w-100">
+                    </div>
+                    Tư vấn giải pháp
+                </div>
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class=" color-wow-orange"><span class="color-wow-blue">2</span>.</div>
+                    <div class=" me-5 mb-3">
+                        <img src="./assets/img/line-arrow.svg" alt="line" class="w-100">
+                    </div>
+                    Phân tích yêu cầu
+                </div>
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class=" color-wow-orange"><span class="color-wow-blue">3</span>.</div>
+                    <div class=" me-5 mb-3">
+                        <img src="./assets/img/line-arrow.svg" alt="line" class="w-100">
+                    </div>
+                    Thiết kế giao diện <br>
+                    & <br> Thiết kế kỹ thuật
+                </div>
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class=" color-wow-orange"><span class="color-wow-blue">4</span>.</div>
+                    <div class=" me-5 mb-3">
+                        <img src="./assets/img/line-arrow.svg" alt="line" class="w-100">
+                    </div>
+                    Phát triển hệ thống
+                </div>
+                <div class="col-lg-2 col-sm-3 col-6">
+                    <div class=" color-wow-orange"><span class="color-wow-blue">5</span>.</div>
+                    <div class=" me-5 mb-3">
+                        <img src="./assets/img/line-arrow.svg" alt="line" class="w-100">
+                    </div>
+                    Vận hành <br>
+                    Hỗ Trợ <br>
+                    Đào Tạo
+                </div>
+            </div>
+        </div>
+        <div class="bg-special-feil">
+            <div class="container ">
+                <div class="title-fiel color-wow-blue">Lĩnh Vực Đặc Biệt
+                </div>
+                <div class="mx-auto text-center">
+                    <img src="./assets/img/3-line.svg" alt="line" class="w-50">
+                </div>
+                <div class="row-are color-white p-md-5 p-4 ">
+                    <div class="col-4 px-2">Thương Mại Điện Tử và Bán lẻ</div>
+                    <div class="col-4 px-md-5 px-2">Hệ Thống Quản Lý Thành Viên
+                        Đa Tầng</div>
+                    <div class="col-4 px-2">Tổng Hợp Phân Tích Dữ Liệu</div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white">
+            <div class="container ">
+                <div class="title-wownet color-wow-orange">WOWNET
+                </div>
+                <div class="row color-black p-md-5 p-4 text-center">
+                    <div class="col-4 color-black">
+                        <img src="./assets/img/ecomerce.gif" alt="Vận Hành Kinh Doanh Online" class="img-wownet-benefit">
+                       <p> Vận Hành Kinh Doanh Online</p>
+                    </div>
+                    <div class="col-4 color-black"><img src="./assets/img/report.gif" alt="Quản Lý Doanh Thu" class="img-wownet-benefit">
+                       <p> Quản Lý Doanh Thu</p>
+                    </div>
+                    <div class="col-4 color-black"><img src="./assets/img/analytic.gif" alt="Tổng Hợp Phân Tích Dữ Liệu" class="img-wownet-benefit">
+                        <p>Tổng Hợp Phân Tích Dữ Liệu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- Footer ------------->
+
+    <footer class="main-footer">
+
+        <div class="category-select">
+            <div class="container">
+                <div class="category-list color-white">
+                    <div class=""><a href="index.html">TRANG CHỦ</a></div>
+                    <div class=""><a href="gioithieu.html">GIỚI THIỆU</a></div>
+                    <div class="active"><a href="#">DỊCH VỤ</a></div>
+                    <div class=""><a href="#">WEBSITE & WOWNET </a></div>
+                    <div class=""><a href="#">API DOCUMENT</a></div>
+                    <div class=""><a href="#">LIÊN HỆ</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-0">
+            <div class="row">
+                <div class="logo col-md-8 col-12 py-4"><a href="#"><img src="./assets/img/logo-wow-bottom.png" /></a>
+                </div>
+                <div class="contacts col-md-4 col-12 py-4 ps-sm-4 ps-0">
+                    <div class="info">0931-311-080</div>
+                    <div class="info">Thứ 2 - Thứ 6: 08:00 - 17:00</div>
+                    <div class="info">ceo@wowcns.co.kr</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--------------------------------->
+    <!-- JS Declaration -->
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="./assets/js/product.js"></script>
+
+    <script src='./assets/js/scripts.js'></script>
+    <script src='./assets/js/single-page-home.js'></script>
+    <script src="./assets/js/wow.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
+
+    <script>
+        new WOW().init();
+    </script>
+
+    <script>
+        var jq = jQuery.noConflict();
+    </script>
+
+</body>
+
+</html>
