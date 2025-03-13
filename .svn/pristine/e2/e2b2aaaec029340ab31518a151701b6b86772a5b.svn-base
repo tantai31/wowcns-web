@@ -1199,23 +1199,6 @@ div.marquee>a>img {
         padding: 4% 5%;
         border-radius: 20px;
     }
-    .question {
-        padding: 5% 10%;
-    }
-    .title-ask {
-        font-size: 56px;
-    }
-    .ceo-content {
-        padding: 5% 10%;
-        flex-direction: column;
-        gap: 40px;
-    }
-    .ceo-left {
-        width: 100%;
-    }
-    .ceo-third {
-        width: 100%;
-    }
 }
 @media (max-width: 767px) {
     .grid-wownet-website {
@@ -1260,15 +1243,6 @@ div.marquee>a>img {
         display: flex
     ;
         margin-top: 20px;
-    }
-    .title-ask {
-        font-size: 38px;
-    }
-    .ceo-first p {
-        font-size: 48px;
-    }
-    .ceo-img-logo {
-        width: 98px;
     }
 }
 @media (min-width: 576px) and (max-width: 767px) {
