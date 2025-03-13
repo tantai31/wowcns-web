@@ -595,12 +595,14 @@ div.marquee>a>img {
     border-right: 1px solid;
     padding-top: 16px;
     padding-right: 24px;
+    width: 40%;
 }
 .con-answer{
     font-size: 20px;
     line-height: 40px;
     padding-left: 40px;
     font-weight: 300;
+    width: 60%;
 }
 .develop-soft{
     text-align: center;
@@ -673,6 +675,10 @@ div.marquee>a>img {
 .row-are div:not(:last-child){
     border-right: 1px solid #ED7E1C;
     align-self: center;
+    padding-left: 0px;
+}
+.main-header .menu-item a ol {
+    padding-left: 0px;
 }
 .img-wownet-benefit{
     width: 200px;
@@ -789,6 +795,7 @@ div.marquee>a>img {
     background-position: center;
     display: flex;
     align-items: center;
+    min-height: 700px;
 }
 .txt-big-title{
     font-size: 78px;
@@ -796,6 +803,77 @@ div.marquee>a>img {
 }
 .txt-design{
     font-size: 40px;
+}
+.blockchain{
+    font-size: 78px;
+    font-weight: 600;
+}
+.bg-wownet{
+    background-color: #287AA8;
+    border-radius: 20px;
+    text-align: center;
+    padding: 80px 0px;
+    font-size: 25px;
+}
+.text-wownet{
+    font-size: 48px;
+}
+.text-wownet-big{
+    font-size: 78px;
+    font-weight: 600;
+}
+.mobile-wowlogo{
+    display: flex;
+    margin-top: -30px;
+}
+.content-wownet{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+}
+.buil{
+    font-size: 48px;
+}
+.item1{
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+.item2{
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+.item3{
+    grid-column: 4 / 6;
+    grid-row: 2 / 4;
+}
+.text-first{
+    font-size: 48px;
+    font-weight: 600;
+}
+.why-big-text{
+    font-size: 78px;
+    font-weight: 600;
+}
+.style-dot{
+    list-style-type: circle;
+}
+.small-my-office{
+    font-size: 48px;
+    font-weight: 500;
+}
+.my-office{
+    font-size: 78px;
+    font-weight: 600;
+}
+.office-left{
+    width: 40%;
+}
+.office-right{
+    width: 60%;
+}
+.office-left img{
+    width: 300px;
+    padding: 30px;
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
 	.text-staff-big {
@@ -839,6 +917,9 @@ div.marquee>a>img {
         align-self: center;
         padding: 12% 10%;
     }
+    .blockchain {
+        font-size: 68px;
+    }
 }
 
 
@@ -877,6 +958,7 @@ div.marquee>a>img {
     .txt-design{
         font-size: 28px;
     }
+    
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -902,6 +984,7 @@ div.marquee>a>img {
     .systems {
         min-height: 310px;
     }
+    
 }
 @media (max-width: 991px) {
     .row {
@@ -1029,6 +1112,93 @@ div.marquee>a>img {
     .foot-computer {
         width: 40%;
     }
+    .design {
+        min-height: 500px;
+    }
+    .blockchain {
+        font-size: 68px;
+    }
+    .content-wownet{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .item1{
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+    }
+    .item2{
+        grid-column: 3 / 3;
+        grid-row: 1 / 3;
+    }
+    .item3{
+        grid-column: 1 / 3;
+        grid-row: 2 / 4;
+    }
+    .text-first {
+        font-size: 40px;
+        font-weight: 500;
+    }
+    .why-big-text {
+        font-size: 68px;
+        font-weight: 500;
+    }
+    .con-ask {
+        width: 100%;
+        font-size: 20px;
+        line-height: 26px;
+        border-bottom: 1px solid;
+        border-left: 1px solid;
+        border-top: 0px solid;
+        border-right: 0px solid;
+        padding-top: 16px;
+        padding-left: 24px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .con-answer{
+        width: 100%;
+        padding-left: 0px;
+    }
+    .num-ask {
+        font-size: 42px;
+        font-weight: 500;
+    }
+    .office-left{
+        width: 100%;
+    }
+    .office-right{
+        width: 100%;
+    }
+    .small-my-office {
+        font-size: 38px;
+        font-weight: 500;
+    }
+    .my-office {
+        font-size: 68px;
+        font-weight: 600;
+    }
+    .buil{
+        font-size: 28px;
+    }
+    .introduce {
+        display: flex;
+        flex-direction: row !important;
+    }
+    .wow-big-gt {
+        font-size: 38px;
+    }
+    .small-text {
+        padding-top: 26px;
+        width: fit-content;
+        font-weight: 600;
+    }
+    .mission {
+        width: calc(90%);
+        padding: 4% 5%;
+        border-radius: 20px;
+    }
 }
 @media (max-width: 767px) {
     .grid-wownet-website {
@@ -1052,6 +1222,27 @@ div.marquee>a>img {
     }
     .txt-design{
         font-size: 20px;
+    }
+    .blockchain {
+        font-size: 38px;
+    }
+    .mobile-wowlogo {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-wownet {
+        font-size: 18px;
+    }
+    .text-wownet-big {
+        font-size: 38px;
+    }
+    .bg-wownet div {
+        font-size: 15px;
+    }
+    .mobile-wowlogo {
+        display: flex
+    ;
+        margin-top: 20px;
     }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1214,5 +1405,61 @@ div.marquee>a>img {
     }
     .big-title-website {
         font-size: 48px;
+    }
+    .blockchain {
+        font-size: 28px;
+    }
+    .grid-wownet-website div:nth-child(1) {
+        width: 60%;
+    }
+    .grid-wownet-website div:nth-child(3) {
+        width: 60%;
+    }
+    .content-wownet{
+        display: grid;
+        grid-template-rows: repeat(3, 100px);
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .item1{
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    .item2{
+        grid-column: 1 / 3;
+        grid-row: 3 / 3;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .item3{
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+    .item2 img{
+        width: auto;
+        width: 150px;
+        margin-bottom: 10px;
+    }
+    .text-first {
+        font-size: 18px;
+    }
+    .why-big-text {
+        font-size: 28px;
+    }
+    .con-answer {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .num-ask {
+        font-size: 28px;
+    }
+    .small-my-office {
+        font-size: 18px;
+    }
+    .my-office {
+        font-size: 28px;
+    }
+    .buil{
+        font-size: 24px;
     }
 }
