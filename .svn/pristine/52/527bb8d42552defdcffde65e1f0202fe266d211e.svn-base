@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Hardy, GHT">
+    <meta name="generator" content="Hardy">
+    <title>WOWSNC Vietnam</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./assets/css/header.css" rel="stylesheet">
+    <link href="./assets/css/footer.css" rel="stylesheet">
+    <link href="./assets/css/modules.css" rel="stylesheet">
+    <link href="./assets/css/single-page-home.css" rel="stylesheet">
+    <link href="./assets/css/single-product.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container container-1">
+            <div class="col_1">
+                <div class="mobile-toggle-wrapper">
+                    <div class="mobile-toggle" id="mobile-toggle">
+                        <div class="cross_hamburger_menu">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-2 main-menu-wrapper">
+            <div class="container">
+                <ul class="main_menu_nav">
+                    <li class="menu-item current-menu-item">
+                        <a id="test" href="index.html">
+                            <div>TRANG CHỦ</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="gioithieu.html" class="active">
+                            <div>GIỚI THIỆU</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="dichvu.html">
+                            <div>DỊCH VỤ</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <div>WEBSITE & WOWNET</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <div>API DOCUMENT</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <div>LIÊN HỆ</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <div>
+                                <ol>
+                                    0931-311-080
+                                </ol>
+                                <ol>
+                                    Thứ 2 - Thứ 6: 08:00 - 17:00
+                                </ol>
+                                <ol>
+                                    ceo@wowcns.co.kr
+                                </ol>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- End Header -->
+
+    <!-- Main Content -->
+
+    <div class="bg-black">
+        <div class="container">
+            <div class="text-partner-global mb-5">
+                Hiện nay chúng tôi có hơn 100 đối tác từ các quốc gia
+            </div>
+            <img src="./assets/img/map-partnerglobal.png" alt="map customers"></img>
+        </div>
+    </div>
+    <div class="">
+        <img src="./assets/img/openVNoffice.png" class="w-100" alt="openning VIETNAM"></img>
+    </div>
+    <!-- <div class=" py-3 bg-black">
+        <div class="row color-wow-blue introduce d-flex">Giới Thiệu <span class="wow-big-gt"> WOWCNS VIETNAM</span>Giới Thiệu <span
+                class="wow-big-gt"> WOWCNS VIETNAM</span>Giới Thiệu <span class="wow-big-gt"> WOWCNS VIETNAM</span>
+        </div>
+    </div> -->
+    <div class="bg-black ">
+        <div class="">
+            <div class="apps-library-logos marquee-wrapper relative overflow-hidden inline-block app-library-rowTwo">
+                <div class="marquee" style="animation-duration: 57s;">
+                    <a target="_blank">
+                        <div class="row color-wow-blue introduce d-flex"> <span class="small-text"> Giới Thiệu
+                            </span><span class="wow-big-gt"> WOWCNS VIETNAM</span></div>
+                    </a>
+                    <a target="_blank">
+                        <div class="row color-wow-blue introduce d-flex"> <span class="small-text"> Giới Thiệu
+                            </span><span class="wow-big-gt"> WOWCNS VIETNAM</span></div>
+                    </a>
+                    <a target="_blank">
+                        <div class="row color-wow-blue introduce d-flex"> <span class="small-text"> Giới Thiệu
+                            </span><span class="wow-big-gt"> WOWCNS VIETNAM</span></div>
+                    </a>
+                    <a target="_blank">
+                        <div class="row color-wow-blue introduce d-flex"> <span class="small-text"> Giới Thiệu
+                            </span><span class="wow-big-gt"> WOWCNS VIETNAM</span></div>
+                    </a>
+                    <a target="_blank">
+                        <div class="row color-wow-blue introduce d-flex"> <span class="small-text"> Giới Thiệu
+                            </span><span class="wow-big-gt"> WOWCNS VIETNAM</span></div>
+                    </a>
+                    <a target="_blank">
+                        <div class="row color-wow-blue introduce d-flex"> <span class="small-text"> Giới Thiệu
+                            </span><span class="wow-big-gt"> WOWCNS VIETNAM</span></div>
+                    </a>
+                    <a target="_blank">
+                        <div class="row color-wow-blue introduce d-flex"> <span class="small-text"> Giới Thiệu
+                            </span><span class="wow-big-gt"> WOWCNS VIETNAM</span></div>
+                    </a>
+                    <a target="_blank">
+                        <div class="row color-wow-blue introduce d-flex"> <span class="small-text"> Giới Thiệu
+                            </span><span class="wow-big-gt"> WOWCNS VIETNAM</span></div>
+                    </a>
+                    <a target="_blank">
+                        <div class="row color-wow-blue introduce d-flex"> <span class="small-text"> Giới Thiệu
+                            </span><span class="wow-big-gt"> WOWCNS VIETNAM</span></div>
+                    </a>
+                    <a target="_blank">
+                        <div class="row color-wow-blue introduce d-flex"> <span class="small-text"> Giới Thiệu
+                            </span><span class="wow-big-gt"> WOWCNS VIETNAM</span></div>
+                    </a>
+                    <a target="_blank">
+                        <div class="row color-wow-blue introduce d-flex"> <span class="small-text"> Giới Thiệu
+                            </span><span class="wow-big-gt"> WOWCNS VIETNAM</span></div>
+                    </a>
+                    <a target="_blank">
+                        <div class="row color-wow-blue introduce d-flex"> <span class="small-text"> Giới Thiệu
+                            </span><span class="wow-big-gt"> WOWCNS VIETNAM</span></div>
+                    </a>
+                    <a target="_blank">
+                        <div class="row color-wow-blue introduce d-flex"> <span class="small-text"> Giới Thiệu
+                            </span><span class="wow-big-gt"> WOWCNS VIETNAM</span></div>
+                    </a>
+                    <a target="_blank">
+                        <div class="row color-wow-blue introduce d-flex"> <span class="small-text"> Giới Thiệu
+                            </span><span class="wow-big-gt"> WOWCNS VIETNAM</span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white">
+        <div class="">
+            <div class="apps-library-logos marquee-wrapper relative overflow-hidden inline-block app-library-rowTwo">
+                <div class="marqueeRowTwo-Revert">
+                    <a target="_blank">
+                        <div class="row introduce d-flex"> <span class="small-text"> Giới Thiệu </span><span
+                                class="wow-big-gt color-wow-orange"> WOWCNS VIETNAM</span></div>
+                    </a>
+                    <a target="_blank">
+                        <div class="row  introduce d-flex"> <span class="small-text"> Giới Thiệu </span><span
+                                class="wow-big-gt color-wow-orange"> WOWCNS VIETNAM</span></div>
+                    </a>
+                    <a target="_blank">
+                        <div class="row  introduce d-flex"> <span class="small-text"> Giới Thiệu </span><span
+                                class="wow-big-gt color-wow-orange"> WOWCNS VIETNAM</span></div>
+                    </a>
+                    <a target="_blank">
+                        <div class="row  introduce d-flex"> <span class="small-text"> Giới Thiệu </span><span
+                                class="wow-big-gt color-wow-orange"> WOWCNS VIETNAM</span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class=" container">
+            <div class="mission">
+                Sứ mệnh của chúng tôi là cung cấp các giải pháp phát triển phần mềm tốt nhất, tiết kiệm chi phí cho
+                khách hàng . Từ các lĩnh vực như Thương Mại Điện Tử, Quản Lý Bán Hàng, Vận Tải, Lưu Trữ...
+            </div>
+        </div>
+    </div>
+    <div class="bg-black">
+        <div class="ceo-content">
+            <div class="ceo-left">
+                <div class="ceo-first d-flex">
+                    <p>CEO</p> <img src="./assets/img/wowcns-vn-ceo.svg" class="ceo-img-logo" alt="logo Wowcns">
+                </div>
+                <div class="ceo-sencond">
+                    Ông <span class="color-wow-blue"> Hwang Woo Sang</span>,<br>
+                    Giám đốc điều hành của <span class="color-wow-orange"> WowCNS</span>
+                </div>
+                <div class="ceo-third mt-3 mt-sm-5">
+                    Chúng tôi sẽ là đối tác đáng tin cậy đồng hành cùng quý khách hàng trong tương lai. Và đây là con
+                    đường mà WOWCNS
+                    Co., Ltd. của chúng tôi muốn hướng tới.
+                </div>
+            </div>
+            <div class="ceo-right ">
+                <img src="./assets/img/img-ceo.png" alt="imge ceo"></img>
+            </div>
+        </div>
+        <div class="question color-white py-0">
+            <div class="title-ask">
+                Vấn Đáp <br> cùng<span class="color-wow-blue"> CEO ?</span>
+            </div>
+        </div>
+        <div class="container color-white">
+            <div class="row">
+                <div class="num-ask color-wow-blue ">01<span class="color-wow-orange">.</span></div>
+            </div>
+            <div class="row py-0 mt-sm-5 mt-3">
+                <div class="col-md-7 col-12 con-ask">
+                    Công ty giúp ích gì cho doanh nghiệp và việc kinh doanh của các doanh nghiệp khác?
+                </div>
+                <div class="col-md-5 col-12 con-answer">
+                    Chúng tôi là doanh nghiệp công nghệ và bạn biết đấy xã hội bây giờ để người dùng biết đến sản phẩm
+                    của bạn, thì
+                    chúng tôi là cầu nối trung gian giúp bạn dùng nền tảng số đưa đến tay khách hàng. Chúng tôi có một
+                    hệ thống quản
+                    lý online cho sản phẩm của bạn.
+                </div>
+            </div>
+            <div class="row mt-sm-5 mt-2">
+                <div class="num-ask color-wow-blue ">02<span class="color-wow-orange">.</span></div>
+            </div>
+            <div class="row py-0 mt-sm-5 mt-3">
+                <div class="col-md-7 col-12 con-ask">
+                    Bằng cách nào tôi biết được nó mang lại hiệu quả cho chúng tôi?
+                </div>
+                <div class="col-md-5 col-12 con-answer">
+                    Thí dụ nếu bạn là một nhãn hàng muốn bán sản phẩm của mình. Những con số là sự thật cụ thể để bạn
+                    biết được sản phẩm của bạn đã bán được bao nhiêu. Nó được ghi lại trên hệ thống của chúng tôi và mọi
+                    thông tin của bạn luôn được đảm bảo an toàn, an ninh, truy cập mọi lúc mọi nơi.
+                </div>
+            </div>
+            <div class="row mt-sm-5 mt-2">
+                <div class="num-ask color-wow-blue ">03<span class="color-wow-orange">.</span></div>
+            </div>
+            <div class="row py-0 mt-sm-5 mt-3">
+                <div class="col-md-7 col-12 con-ask">
+                    Chi phí thì sao?
+                </div>
+                <div class="col-md-5 col-12 con-answer">
+                    Công ty chúng tôi có các gói với giá khác nhau, tương ứng với mốc thời gian cụ thể. Dựa theo yêu cầu
+                    của khách, đội ngũ nhân viên sẽ tư vấn, đưa ra một lộ trình rõ ràng, rành mạch, chi tiết phù hợp với
+                    công ty bạn. Dựa vào đó bạn có thể kiểm soát được chi phí của mình.
+                </div>
+            </div>
+        </div>
+        <div class="container pb-0 con-answer">
+            <img src="./assets/img/img-wow-hill.png" alt="Hill logo">
+        </div>
+    </div>
+    <!-- Sidebar Helper -->
+    <div class="sidebar-helper goTop">
+        <div href="#" class="sidebar-item">
+            <img src="./assets/img/wowcns-vn-letter-o.png" alt="">
+        </div>
+    </div>
+    <!------------- Footer ------------->
+
+    <footer class="main-footer">
+
+        <div class="category-select">
+            <div class="container">
+                <div class="category-list color-white">
+                    <div class=""><a href="index.html">TRANG CHỦ</a></div>
+                    <div class="active"><a href="gioithieu.html">GIỚI THIỆU</a></div>
+                    <div class=""><a href="#">DỊCH VỤ</a></div>
+                    <div class=""><a href="#">WEBSITE & WOWNET </a></div>
+                    <div class=""><a href="#">API DOCUMENT</a></div>
+                    <div class=""><a href="#">LIÊN HỆ</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-0">
+            <div class="row">
+                <div class="logo col-md-8 col-12 py-4"><a href="#"><img src="./assets/img/logo-wow-bottom.png" /></a>
+                </div>
+                <div class="contacts col-md-4 col-12 py-4 ps-sm-4 ps-0">
+                    <div class="info">0931-311-080</div>
+                    <div class="info">Thứ 2 - Thứ 6: 08:00 - 17:00</div>
+                    <div class="info">ceo@wowcns.co.kr</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--------------------------------->
+    <!-- JS Declaration -->
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="./assets/js/product.js"></script>
+
+    <script src='./assets/js/scripts.js'></script>
+    <script src='./assets/js/single-page-home.js'></script>
+    <script src="./assets/js/wow.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
+
+    <script>
+        new WOW().init();
+    </script>
+
+    <script>
+        var jq = jQuery.noConflict();
+    </script>
+
+</body>
+
+</html>
