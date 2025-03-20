@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="WowCNS VIETNAM giúp công ty khách hàng tạo ra nhiều giải pháp và phầm mềm, và giải pháp thương mai điện tử, phần mềm hỗ trợ trí tuệ nhân tạo, đáp ứng với nhu cầu phát triển của công ty, tạo mô hình kinh doanh đa tầng, kiểm tra quản lý doanh thu trong hệ thống kinh doanh đa tầng.">
+    <meta name="keyword" content="WowCNS VIETNAM cong ty phan mem, cong nghe thong tin, AI, Blockchain">
+    <meta name="title" content="Giải pháp phần mềm, Kinh Doanh mô hình đa tầng">
+    <title>WOWSNS VIETNAM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./assets/css/header.css" rel="stylesheet">
+    <link href="./assets/css/footer.css" rel="stylesheet">
+    <link href="./assets/css/modules.css" rel="stylesheet">
+    <link href="./assets/css/single-page-home.css" rel="stylesheet">
+    <link href="./assets/css/single-product.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container container-1">
+            <div class="col_1">
+                <div class="mobile-toggle-wrapper">
+                    <div class="mobile-toggle" id="mobile-toggle">
+                        <div class="cross_hamburger_menu">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-2 main-menu-wrapper">
+            <div class="container">
+                <ul class="main_menu_nav">
+                    <li class="menu-item current-menu-item">
+                        <a id="test" href="index.html" class="active">
+                            <div>TRANG CHỦ</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="gioithieu.html">
+                            <div>GIỚI THIỆU</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="dichvu.html">
+                            <div>DỊCH VỤ</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="websitewownet.html">
+                            <div>WEBSITE & WOWNET</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <div>API DOCUMENT</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="lienhe.html">
+                            <div>LIÊN HỆ</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <div>
+                                <ol>
+                                    0931-311-080
+                                </ol>
+                                <ol>
+                                    Thứ 2 - Thứ 6: 08:00 - 17:00
+                                </ol>
+                                <ol>
+                                    ceo@wowcns.co.kr
+                                </ol>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- End Header -->
+
+    <!-- Main Content -->
+
+    <div class="bg-banner">
+        <div class="text-center container py-0">
+            <img src="./assets/img/WOWCNS_VIETNAM_orange.gif"></img>
+        </div>
+    </div>
+    <div class="bg-home-tech">
+        <div class="home_tech container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <!-- <div class="extra-txt-big row justify-content-center">C<div class="letter-O col-auto">Ô</div>NG</div>
+                        <div class="extra-txt-big row justify-content-center">NG <div class="letter-H col-auto">H</div> Ệ</div> -->
+                    <img src="./assets/img/congnghe-black.png" alt="hình công nghệ" class="img-tech mx-auto">
+                </div>
+                <div class="col-12 col-lg-6 txt-home-right">
+                    <div class="text-cercle">Xây dựng
+                        nền tảng quản lý,
+                        kinh doanh bằng
+                        công nghệ.
+                    </div>
+                    <div class="home-txt-line-1 py-5">Đưa sản phẩm dịch vụ của khách hàng tới người dùng.</div>
+                    <div class="home-txt-line-2 ps-md-5 ps-0">Đảm bảo bảo mật, giải pháp tốt cho doanh nghiệp.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white">
+        <div class="container bg-white">
+            <div class="home-platform row bg-blue-tech">
+                <div class="platform-logo col-lg-2 col-12">
+                    <img src="./assets/img/logo-Wow-horizontal.svg" alt=" Wowcns Vietnam logo" class="logo-h-left">
+                </div>
+                <div class="col-lg-10 col-12 py-md-5 py-2 align-self-center before-phone">
+                    <div class="platform-text line-text line-one pb-sm-5 pb-4">
+                        <span class="text-white"> Nền tảng </span> <span class="text-black"> bảo mật</span>
+                    </div>
+                    <div class="platform-text line-text line-second pb-sm-5 pb-4">
+                        <span class="text-black"> Công nghệ</span> <span class="text-white"> mới</span>
+                    </div>
+                    <div class="platform-text line-text line-third pb-sm-5 pb-4">
+                        <span class="text-white"> Quản lý </span> <span class="text-black"> rõ ràng</span>
+                    </div>
+                    <div class="platform-text line-text line-fourth pb-sm-5 pb-4">
+                        <span class="text-black">Giải pháp</span> <span class="text-white"> thông minh</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white">
+        <div class="container">
+            <div class="color-black text-software">Cung cấp những giải pháp <span class="text-software-large"> phần
+                    mềm</span> cho khách hàng:</div>
+            <div class="row">
+                <div class="col-lg-3 col-md-5 col-12 mx-auto bg-arrow">
+                    <img src="./assets/img/Money-stack.gif" alt=" Wowcns Vietnam logo" class="">
+                </div>
+                <div class="text-software-content col-lg col-md col-12 color-black">
+                    Bằng kinh nghiệm 20 năm phục vụ, xây dựng, triển khai các giải pháp phần mềm tại các quốc gia lớn
+                    như Hàn, Nhật, Mỹ, Singapore, Thái lan... Chúng tôi phát triển những hệ thống, mang lại sự cải tiến
+                    và giải pháp đúng cho nhu cầu của từng doanh nghiệp.
+                </div>
+            </div>
+            <div class="row row-link text-end">
+                <div class="link-service"><a href="dichvu.html" class="color-white">Dịch Vụ 
+                    <img src="./assets/img/arrow_forward.svg" alt="arrow" class="arrow-forward"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slide logo partner -->
+    <div class="bg-white ">
+        <div class="py-sm-5 py-4">
+            <div class="color-black text-software"><b>Đối tác chiến lược</b></div>
+            <div class="apps-library-logos marquee-wrapper relative overflow-hidden inline-block app-library-rowTwo">
+                <div class="marquee" style="animation-duration: 57s;">
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-1.png" alt="Vimeo logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-2.png" alt="Disney logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-3.png" alt="Booking.com logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-4.png" alt="app logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-5.png" alt="Gapp logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-6.png" alt="Gapp logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-7.png" alt="Gapp logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-8.png" alt="Gapp logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-9.png" alt="Gapp logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-10.png" alt="Gapp logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-11.png" alt="Gapp logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-12.png" alt="Gapp logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-13.png" alt="Gapp logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-14.png" alt="Gapp logo">
+                    </a>
+                </div>
+                <div class="marquee" style="animation-duration: 57s;">
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-1.png" alt="Vimeo logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-2.png" alt="Disney logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-3.png" alt="Booking.com logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-4.png" alt="app logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-5.png" alt="Gapp logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-6.png" alt="Gapp logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-7.png" alt="Gapp logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-8.png" alt="Gapp logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-9.png" alt="Gapp logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-10.png" alt="Gapp logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-11.png" alt="Gapp logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-12.png" alt="Gapp logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-13.png" alt="Gapp logo">
+                    </a>
+                    <a target="_blank">
+                        <img class="w-32" loading="lazy" src="./assets/img/logo-partner-14.png" alt="Gapp logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The staffs -->
+    <div class="bg-white">
+        <div class="container">
+            <div class="color-black text-staffs">Đội ngũ nhân viên</div>
+            <div class="row">
+                <div class="text-staff-big col-lg col-12 color-black dong-1">
+                    <p><span class="color-wow-blue">Tâm</span> Huyết - Sáng Tạo</p>
+                    <p><span class="color-wow-blue">Tài</span> Năng - Chuyên Nghiệp</p>
+                </div>
+                <div class="col-lg-3 col-12 mx-auto desk-code dong-2">
+                    <img src="./assets/img/desk-code.png" alt="coding" class="w-auto">
+                </div>
+                <div class="text-staff-big col-12 color-black dong-3">
+                    <p>Mang Lại Sản Phẩm <span class="color-wow-orange"> Tốt </span>- Tối Ưu Chi Phí</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <img src="./assets/img/map-white.gif" alt="map" class="desk-img-map">
+                <img src="./assets/img/map-mobile-white.gif" alt="map" class="desk-img-mobl">
+            </div>
+        </div>
+    </div>
+    <div class="bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12 color-black pe-lg-5 pe-0">
+                    <div class="row"><img src="./assets/img/vn.jpg" alt="cờ Việt Nam" class="pe-3 flag-vn-kr">Văn phòng
+                        Việt Nam</div>
+                    <div class=" wrawp-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.5477743399715!2d106.7095629936074!3d10.845878329073797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529094d0a9575%3A0x226dc15fbd03d9e3!2sC%C3%B4ng%20ty%20TNHH%20WOWCN%20VIET%20NAM!5e0!3m2!1svi!2s!4v1740562650265!5m2!1svi!2s"
+                            width="870" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <p>73 Đinh Thị Thi, Vạn Phúc City, phường Hiệp Bình Phước, TP Thủ Đức, Hồ Chí Minh.</p>
+                </div>
+                <div class="col-lg-6 col-12 color-black">
+                    <div class="row"><img src="./assets/img/kr.jpg" alt="cờ Hàn Quốc" class=" pe-3 flag-vn-kr">Văn phòng
+                        Hàn Quốc</div>
+                    <div class="wrawp-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3160.5043589111465!2d127.11030097631567!3d37.613822414243586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbbe492d91119%3A0x34dfe692b0091939!2z7ZWY66eI7Y-JIOycoO2VnOyxheyehO2ajOyCrA!5e0!3m2!1svi!2s!4v1740638174810!5m2!1svi!2s"
+                            width="870" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <p>서울특별시 성동구 성수이로22길 37 성수동 아크밸리 1301호, 1302호</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sidebar Helper -->
+    <div class="sidebar-helper goTop">
+        <div href="#" class="sidebar-item">
+            <img src="./assets/img/wowcns-vn-letter-o.png" alt="">
+        </div>
+    </div>
+    <!------------- Footer ------------->
+
+    <footer class="main-footer">
+
+        <div class="category-select">
+            <div class="container">
+                <div class="category-list color-black">
+                    <div class="active"><a href="index.html">TRANG CHỦ</a></div>
+                    <div class=""><a href="gioithieu.html">GIỚI THIỆU</a></div>
+                    <div class=""><a href="#">DỊCH VỤ</a></div>
+                    <div class=""><a href="websitewownet.html">WEBSITE & WOWNET </a></div>
+                    <div class=""><a href="#">API DOCUMENT</a></div>
+                    <div class=""><a href="lienhe.html">LIÊN HỆ</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-0">
+            <div class="row">
+                <div class="logo col-md-8 col-12 py-4"><a href="#"><img src="./assets/img/logo-wow-bottom-black.png" /></a>
+                </div>
+                <div class="contacts col-md-4 col-12 py-4 ps-sm-4 ps-0">
+                    <div class="info">0931-311-080</div>
+                    <div class="info">Thứ 2 - Thứ 6: 08:00 - 17:00</div>
+                    <div class="info">ceo@wowcns.co.kr</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--------------------------------->
+    <!-- JS Declaration -->
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="./assets/js/product.js"></script>
+
+    <script src='./assets/js/scripts.js'></script>
+    <script src='./assets/js/single-page-home.js'></script>
+    <script src="./assets/js/wow.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
+
+    <script>
+        new WOW().init();
+    </script>
+
+    <script>
+        var jq = jQuery.noConflict();
+    </script>
+
+</body>
+
+</html>
