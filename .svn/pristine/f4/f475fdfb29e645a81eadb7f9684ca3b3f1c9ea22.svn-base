@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="WowCNS VIETNAM giúp công ty khách hàng tạo ra nhiều giải pháp và phầm mềm, và giải pháp thương mai điện tử, phần mềm hỗ trợ trí tuệ nhân tạo, đáp ứng với nhu cầu phát triển của công ty, tạo mô hình kinh doanh đa tầng, kiểm tra quản lý doanh thu trong hệ thống kinh doanh đa tầng.">
+    <meta name="keyword" content="WowCNS VIETNAM cong ty phan mem, cong nghe thong tin, AI, Blockchain">
+    <meta name="title" content="Giải pháp phần mềm, Kinh Doanh mô hình đa tầng">
+    <title>WOWSNS VIETNAM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./assets/css/header.css" rel="stylesheet">
+    <link href="./assets/css/footer.css" rel="stylesheet">
+    <link href="./assets/css/modules.css" rel="stylesheet">
+    <link href="./assets/css/single-page-home.css" rel="stylesheet">
+    <link href="./assets/css/single-product.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container container-1">
+            <div class="col_1">
+                <div class="mobile-toggle-wrapper">
+                    <div class="mobile-toggle" id="mobile-toggle">
+                        <div class="cross_hamburger_menu">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-2 main-menu-wrapper">
+            <div class="container">
+                <ul class="main_menu_nav">
+                    <li class="menu-item current-menu-item">
+                        <a id="test" href="index.html">
+                            <div>TRANG CHỦ</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="gioithieu.html">
+                            <div>GIỚI THIỆU</div>
+                        </a>
+                    </li>
+                    <li class="menu-item" >
+                        <a href="dichvu.html">
+                            <div>DỊCH VỤ</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="websitewownet.html" >
+                            <div>WEBSITE & WOWNET</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <div>API DOCUMENT</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="active">
+                            <div>LIÊN HỆ</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <div>
+                                <ol>
+                                    0931-311-080
+                                </ol>
+                                <ol>
+                                    Thứ 2 - Thứ 6: 08:00 - 17:00
+                                </ol>
+                                <ol>
+                                    ceo@wowcns.co.kr
+                                </ol>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- End Header -->
+
+    <!-- Main Content -->
+
+    <div class="bg-black">
+        <div class="container color-white">
+            <div class="row">
+                <div class="contact-info col-lg-6 col-12">
+                    <p class="title-contact color-wow-orange">
+                        Liên hệ
+                    </p>
+                    <p>
+                        <div class="pb-3">
+                            <span class="point"></span>
+                            Người đại diện: Ông Hwang Woo Sang
+                        </div>
+                        <div class="row pb-3" style="align-items: baseline;">
+                            <span class="point"></span>
+                            <span class="w-auto col">
+                                Địa chỉ: Số 73 Đinh Thị Thi, Khu Đô thị Vạn Phúc, Phường Hiệp Bình Phước, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam
+                            </span>
+                        
+                        </div>
+                        <div class="pb-3">
+                            <span class="point"></span>
+                            Điện thoại: 0931-311-080
+                        </div>
+                        <div class="pb-3">
+                            <span class="point"></span>
+                            Email: ceo@wowcns.co.kr
+                        </div>
+                        <div class="pb-3">
+                            <span class="point"></span>
+                            Giờ làm việc: Thứ 2 - Thứ 6: 08:00 - 17:00
+                        </div>
+                    </p>
+                </div>
+                <div class="contact-info col-lg-6 col-12 color-wow-blue">
+                    <div class="bg-white p-5">
+                        <div class="row pb-4">
+                            <div class="col-lg-3 col-md-5 col-12">Tên</div>
+                            <div class="col-lg"><input type="text" class="w-100"></div>
+                        </div>
+                        <div class="row pb-4">
+                            <div class="col-lg-3 col-md-5 col-12">Tên Công Ty</div>
+                            <div class="col-lg"><input type="text" class="w-100"></div>
+                        </div>
+                        <div class="row pb-4">
+                            <div class="col-lg-3 col-md-5 col-12">Phone</div>
+                            <div class="col-lg"><input type="text" class="w-100"></div>
+                        </div>
+                        <div class="row pb-4">
+                            <div class="col-lg-3 col-md-5 col-12">Email</div>
+                            <div class="col-lg"><input type="text" class="w-100"></div>
+                        </div>
+                        <div class="row pb-4">
+                            <div class="col-lg-3 col-md-5 col-12">Nội dung</div>
+                            <div class="col-lg"><input type="text" class="w-100"></div>
+                        </div>
+                        <div class="row ">
+                            <div class="send-email d-flex"><b>Gửi</b><img src="./assets/img/wowcns-vn-ceo.svg" alt="logo" class="ms-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-black">
+        <div class="container overflow-hidden">
+            <p class="color-white">73 Đinh Thị Thi, Vạn Phúc City, phường Hiệp Bình Phước, TP Thủ Đức, Hồ Chí Minh.</p>
+            <div class=" w-100">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.5477743399715!2d106.7095629936074!3d10.845878329073797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529094d0a9575%3A0x226dc15fbd03d9e3!2sC%C3%B4ng%20ty%20TNHH%20WOWCN%20VIET%20NAM!5e0!3m2!1svi!2s!4v1740562650265!5m2!1svi!2s"
+                    width="1400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <!------------- Footer ------------->
+
+    <footer class="main-footer">
+
+        <div class="category-select">
+            <div class="container">
+                <div class="category-list color-white">
+                    <div class=""><a href="index.html">TRANG CHỦ</a></div>
+                    <div class=""><a href="gioithieu.html">GIỚI THIỆU</a></div>
+                    <div class=""><a href="#">DỊCH VỤ</a></div>
+                    <div class=""><a href="websitewownet.html">WEBSITE & WOWNET </a></div>
+                    <div class=""><a href="#">API DOCUMENT</a></div>
+                    <div class="active"><a href="#">LIÊN HỆ</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-0">
+            <div class="row">
+                <div class="logo col-md-8 col-12 py-4"><a href="#"><img src="./assets/img/logo-wow-bottom.png" /></a>
+                </div>
+                <div class="contacts col-md-4 col-12 py-4 ps-sm-4 ps-0">
+                    <div class="info">0931-311-080</div>
+                    <div class="info">Thứ 2 - Thứ 6: 08:00 - 17:00</div>
+                    <div class="info">ceo@wowcns.co.kr</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--------------------------------->
+    <!-- JS Declaration -->
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="./assets/js/product.js"></script>
+
+    <script src='./assets/js/scripts.js'></script>
+    <script src='./assets/js/single-page-home.js'></script>
+    <script src="./assets/js/wow.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
+
+    <script>
+        new WOW().init();
+    </script>
+
+    <script>
+        var jq = jQuery.noConflict();
+    </script>
+
+</body>
+
+</html>
