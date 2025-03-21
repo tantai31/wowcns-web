@@ -64,12 +64,12 @@
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="api.html">
+                        <a href="#" class="active">
                             <div>API DOCUMENT</div>
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="active">
+                        <a href="#" >
                             <div>LIÊN HỆ</div>
                         </a>
                     </li>
@@ -102,72 +102,13 @@
             <div class="row">
                 <div class="contact-info col-lg-6 col-12">
                     <p class="title-contact color-wow-orange">
-                        Liên hệ
+                        API
                     </p>
                     <p>
-                        <div class="pb-3">
-                            <span class="point"></span>
-                            Người đại diện: Ông Hwang Woo Sang
-                        </div>
-                        <div class="row pb-3" style="align-items: baseline;">
-                            <span class="point"></span>
-                            <span class="w-auto col">
-                                Địa chỉ: Số 73 Đinh Thị Thi, Khu Đô thị Vạn Phúc, Phường Hiệp Bình Phước, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam
-                            </span>
                         
-                        </div>
-                        <div class="pb-3">
-                            <span class="point"></span>
-                            Điện thoại: 0931-311-080
-                        </div>
-                        <div class="pb-3">
-                            <span class="point"></span>
-                            Email: ceo@wowcns.co.kr
-                        </div>
-                        <div class="pb-3">
-                            <span class="point"></span>
-                            Giờ làm việc: Thứ 2 - Thứ 6: 08:00 - 17:00
-                        </div>
                     </p>
                 </div>
-                <div class="contact-info col-lg-6 col-12 color-wow-blue">
-                    <div class="bg-white p-5">
-                        <div class="row pb-4">
-                            <div class="col-lg-3 col-md-5 col-12">Tên</div>
-                            <div class="col-lg"><input type="text" class="w-100"></div>
-                        </div>
-                        <div class="row pb-4">
-                            <div class="col-lg-3 col-md-5 col-12">Tên Công Ty</div>
-                            <div class="col-lg"><input type="text" class="w-100"></div>
-                        </div>
-                        <div class="row pb-4">
-                            <div class="col-lg-3 col-md-5 col-12">Phone</div>
-                            <div class="col-lg"><input type="text" class="w-100"></div>
-                        </div>
-                        <div class="row pb-4">
-                            <div class="col-lg-3 col-md-5 col-12">Email</div>
-                            <div class="col-lg"><input type="text" class="w-100"></div>
-                        </div>
-                        <div class="row pb-4">
-                            <div class="col-lg-3 col-md-5 col-12">Nội dung</div>
-                            <div class="col-lg"><input type="text" class="w-100"></div>
-                        </div>
-                        <div class="row ">
-                            <div class="send-email d-flex"><b>Gửi</b><img src="./assets/img/wowcns-vn-ceo.svg" alt="logo" class="ms-3"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bg-black">
-        <div class="container overflow-hidden">
-            <p class="color-white">73 Đinh Thị Thi, Vạn Phúc City, phường Hiệp Bình Phước, TP Thủ Đức, Hồ Chí Minh.</p>
-            <div class=" w-100">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.5477743399715!2d106.7095629936074!3d10.845878329073797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529094d0a9575%3A0x226dc15fbd03d9e3!2sC%C3%B4ng%20ty%20TNHH%20WOWCN%20VIET%20NAM!5e0!3m2!1svi!2s!4v1740562650265!5m2!1svi!2s"
-                    width="1400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
             </div>
         </div>
     </div>
@@ -188,8 +129,8 @@
                     <div class=""><a href="gioithieu.html">GIỚI THIỆU</a></div>
                     <div class=""><a href="dichvu.html">DỊCH VỤ</a></div>
                     <div class=""><a href="websitewownet.html">WEBSITE & WOWNET </a></div>
-                    <div class=""><a href="api.html">API DOCUMENT</a></div>
-                    <div class="active"><a href="#">LIÊN HỆ</a></div>
+                    <div class="active"><a href="api.html">API DOCUMENT</a></div>
+                    <div class=""><a href="lienhe.html">LIÊN HỆ</a></div>
                 </div>
             </div>
         </div>
