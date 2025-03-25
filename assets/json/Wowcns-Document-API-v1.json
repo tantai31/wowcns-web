@@ -1,0 +1,1584 @@
+[
+    {
+        "menu-parent": "Member",
+        "menu-name": "CreateMember",
+        "menu-desc": "Creates a new Member.",
+        "input": {
+            "description": "You must be logged in to create a member.",
+            "url": "https://{{host}}/save",
+            "method": "POST",
+            "content-type": "application/json",
+            "body": {
+                "fields": [
+                    {
+                        "name": "comId",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 8,
+                        "remarks": "The Id of company."						
+                    },
+					{
+						"name":"userid",
+						"type": "text",
+                        "required": "Condition",
+                        "length": 10,
+                        "remarks": "Depending on company policy, entry is mandatory or not."						
+					},
+                    {
+                        "name": "username",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 45,
+                        "remarks": "Member name."
+						
+                    },
+                    {
+                        "name": "usernameKana",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 45,
+                        "remarks": "Member Name (Japan only)"
+						
+                    },
+                    {
+                        "name": "givenName",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 50,
+                        "remarks": "Member Name (English Name)"
+						
+                    },
+                    {
+                        "name": "middleName",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 50,
+                        "remarks": "Member Name (English Middle Name)"
+						
+                    },
+                    {
+                        "name": "familyName",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 50,
+                        "remarks": "Member Name (English Last Name)"
+						
+                    },
+                    {
+                        "name": "nickname",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 30,
+                        "remarks": "Nickname"
+						
+                    },
+                    {
+                        "name": "comName",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 45,
+                        "remarks": "Corporate name - In the case of foreign countries, companies can also join."
+						
+                    },
+                    {
+                        "name": "regKind",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 1,
+                        "remarks": "O:Online, F:Offline (default O)"
+						
+                    },
+                    {
+                        "name": "regDate",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 8,
+                        "remarks": "Date of registration (YYYYMMDD)"
+						
+                    },
+					{
+                        "name": "loginId",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 60,
+                        "remarks": "ID used to log in to myoffice, if not entered the ID will be your userid."
+						
+                    },
+					{
+                        "name": "passwd",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 40,
+                        "remarks": "Password is used to log in to myoffice, if not entered password will be your date of birth(YYYYMMDD)."
+						
+                    },
+					{
+                        "name": "ctrCd",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 2,
+                        "remarks": "Country code as defined by the company"
+						
+                    },
+					{
+                        "name": "userKind",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 5,
+                        "remarks": "Code as defined by the company"
+						
+                    },
+					{
+                        "name": "cntCd",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 5,
+                        "remarks": "Center code as defined by the company"
+						
+                    },
+					{
+                        "name": "grpCd",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 5,
+                        "remarks": "Group code as defined by the company"
+						
+                    },
+					{
+                        "name": "abPos",
+                        "type": "int",
+                        "required": "Required",
+                        "length": 1,
+                        "remarks": "Used to specify position (leg) 0:Auto 1:left, 2:right"
+						
+                    },
+					{
+                        "name": "pId",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 10,
+                        "remarks": "Placement Id"
+						
+                    },
+					{
+                        "name": "rId",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 10,
+                        "remarks": "Sponsor Id"
+						
+                    },
+					{
+                        "name": "cId",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 10,
+                        "remarks": "Unused - Spare"
+						
+                    },
+					{
+                        "name": "sId",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 10,
+                        "remarks": "Unused - Spare"
+						
+                    },
+					{
+                        "name": "rankCd",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 4,
+                        "remarks": "Rank code as defined by the company"
+						
+                    },
+					{
+                        "name": "bankCd",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 7,
+                        "remarks": "Bank code as defined by the company"
+						
+                    },
+					{
+                        "name": "accNo",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 150,
+                        "remarks": "Account number"
+						
+                    },
+					{
+                        "name": "depositor",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 45,
+                        "remarks": "Depositor"
+						
+                    },
+					{
+                        "name": "juminNo",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 60,
+                        "remarks": "Resident registration number(including '-')"
+						
+                    },
+					{
+                        "name": "taxNo",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 20,
+                        "remarks": "TIN - Taxpayer Identification Number"
+						
+                    },
+					{
+                        "name": "taxKind",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 3,
+                        "remarks": "Allowance Tax Treatment Classification (PSN Individual / COM Corporation)"
+						
+                    },
+					{
+                        "name": "birthday",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 8,
+                        "remarks": "Date of birth (YYYYMMDD)"
+						
+                    },
+					{
+                        "name": "gender",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 1,
+                        "remarks": "Gender (M: Male, F: Female)"
+						
+                    },
+					{
+                        "name": "tel",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 20,
+                        "remarks": "Phone number"
+						
+                    },
+					{
+                        "name": "mobile",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 20,
+                        "remarks": "Mobile phone"
+						
+                    },
+					{
+                        "name": "email",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 60,
+                        "remarks": "E-mail address"
+						
+                    },
+					{
+                        "name": "post",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 8,
+                        "remarks": "Postal code"
+						
+                    },
+					{
+                        "name": "state",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 30,
+                        "remarks": "City/Province/(Foreign) State, Province"
+						
+                    },
+					{
+                        "name": "city",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 30,
+                        "remarks": "City"
+						
+                    },
+					{
+                        "name": "country",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 30,
+                        "remarks": "County"
+						
+                    },
+					{
+                        "name": "addr1",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 150,
+                        "remarks": "Street address"
+						
+                    },
+					{
+                        "name": "addr2",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 90,
+                        "remarks": "Apartment, suite, etc. (optional)"
+						
+                    },
+					{
+                        "name": "okDateSMS",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 1,
+                        "remarks": "Company Information Reception Approval Date - SMS(Y:Yes, N:No). Stored as SYSDATE if Y."
+						
+                    },
+					{
+                        "name": "okDateEmail",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 1,
+                        "remarks": "Company Information Reception Approval Date - Email(Y:Yes, N:No). Stored as SYSDATE if Y."
+						
+                    },
+					{
+                        "name": "dateEdu",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 8,
+                        "remarks": "Training date(YYYYMMDD)"
+						
+                    },
+					{
+                        "name": "dateSendCert",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 8,
+                        "remarks": "Date of issue - Membership registration certificate(YYYYMMDD)"
+						
+                    },
+					{
+                        "name": "dateSendBook",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 8,
+                        "remarks": "Date of issue - Multi-level notebook(YYYYMMDD)"
+						
+                    },
+					{
+                        "name": "dateGetParent",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 8,
+                        "remarks": "Submission Date - Parental Consent Form(YYYYMMDD)"
+						
+                    },
+					{
+                        "name": "dateGetRegist",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 8,
+                        "remarks": "Submission Date - Membership Application Form(YYYYMMDD)"
+						
+                    },
+					{
+                        "name": "dateGetJumin",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 8,
+                        "remarks": "Date of submission - ID(YYYYMMDD)"
+						
+                    },
+					{
+                        "name": "dateGetTax",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 8,
+                        "remarks": "Date of submission - Taxpayer registration certificate(YYYYMMDD)"
+						
+                    },
+					{
+                        "name": "dateGetBank",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 8,
+                        "remarks": "Submission Date - Bankbook Copy(YYYYMMDD)"
+						
+                    },
+					{
+                        "name": "notice",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 150,
+                        "remarks": "Notice"
+						
+                    },
+					{
+                        "name": "remark",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 150,
+                        "remarks": "Remark"
+						
+                    },
+					{
+                        "name": "workUser",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 5,
+                        "remarks": "Worker number(default 'GUEST')"
+						
+                    }
+                ],
+				"example":{
+					"COMPANY":"COMPANY",
+					"userid":"0100000000",
+					"username":"Jonh...",
+					"usernameKana":"テスト",
+					"givenName":"John",
+					"middleName":"F.",
+					"familyName":"John",
+					"nickname":"test",
+					"comName":"companyname",
+					"regKind":"O",
+					"regDate":"20250324",
+					"loginId":"test",
+					"passwd":"123456",
+					"ctrCd":"US",
+					"userKind":"01U10",
+					"cntCd":"01000",
+					"grpCd":"01G01",
+					"abPos":1,
+					"pId":"0100000000",
+					"rId":"0100000000",
+					"cId":"0100000000",
+					"sId":"0100000000",
+					"rankCd":"0101",
+					"bankCd":"01B999",
+					"accNo":"1234123412341234",
+					"depositor":"test",
+					"juminNo":"1234-1234-1234-1234",
+					"taxNo":"1234132412341234",
+					"taxKind":"PSN",
+					"birthday":"19990324",
+					"gender":"M",
+					"tel":"123412341234",
+					"mobile":"123412341234",
+					"email":"example@gmail.com",
+					"post":"90020",
+					"state":"CA",
+					"city":"Los Angeles",
+					"country":"US",
+					"addr1":"123 Street",
+					"addr2":"Department 345",
+					"okDateSMS":"Y",
+					"okDateEmail":"Y",
+					"dateEdu":"20250324",
+					"dateSendCert":"20250324",
+					"dateSendBook":"20250324",
+					"dateGetParent":"20250324",
+					"dateGetRegist":"20250324",
+					"dateGetJumin":"20250324",
+					"dateGetTax":"20250324",
+					"dateGetBank":"20250324",
+					"notice":"this is notice...",
+					"remark":"this is remark...",
+					"workUser":"GUEST"
+					
+				}
+            }
+        },
+        "output": {
+            "description": "information about the created member",
+            "success": {
+                "status": "Ok",
+                "message": "Members created successfully",
+                "fields": [
+                    {
+                        "name": "retCode",
+                        "type": "text",
+                        "required": "",
+                        "length": 50,
+                        "remarks": "Result code(If successful the code will be 'OK')",
+						"example":"OK"
+                    },
+                    {
+                        "name": "keyValue",
+                        "type": "text",
+                        "required": "",
+                        "length": 50,
+                        "remarks": "Member Id",
+						"example":"0100000000"
+                    }
+                ]
+            },
+            "error": [
+                {
+					"name": "retCode",
+                    "type": "text",
+                    "required": "",
+                    "length": 50,
+                    "remarks": "Result code(If fail the code will be 'ERROR')",
+					"example":"ERROR"              
+                },
+				{
+					"name": "retStr",
+                    "type": "text",
+                    "required": "",
+                    "length": 50,
+                    "remarks": "Error message",
+					"example":"error message...."              
+                }
+            ]
+        }
+    },
+	{
+        "menu-parent": "Member",
+        "menu-name": "MemberSearch",
+        "menu-desc": "Search List Member.",
+        "input": {
+            "description": "You must be logged in to create a member.",
+            "url": "https://{{host}}/search",
+            "method": "POST",
+            "content-type": "application/json",
+            "body": {
+                "fields": [
+					{
+                        "name": "comId",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 8,
+                        "remarks": "The Id of company."
+						
+                    },
+                    {
+                        "name": "userid",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 10,
+                        "remarks": "Member Id"
+						
+                    },
+					{
+						"name":"chkuserid",
+						"type": "text",
+                        "required": "Required",
+                        "length": 1,
+                        "remarks": "Direct Placement:2, Placement Group:3, Direct Sponsor:5, Sponsor Group:6 (default '2')"
+						
+					},
+                    {
+                        "name": "startDate",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 8,
+                        "remarks": "Registration starts date(YYYYMMDD)"
+						
+                    },
+                    {
+                        "name": "endDate",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 8,
+                        "remarks": "Registration end date(YYYYMMDD)"
+						
+                    },
+                    {
+                        "name": "value",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 50,
+                        "remarks": "Member name"
+						
+                    },
+                    {
+                        "name": "rankCd",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 4,
+                        "remarks": "Rank code as defined by the company"
+						
+                    },
+					{
+                        "name": "page",
+                        "type": "int",
+                        "required": "Optional",
+                        "length": 100,
+                        "remarks": "number of pages of list(default 0)"
+						
+                    },
+					{
+                        "name": "len",
+                        "type": "int",
+                        "required": "Optional",
+                        "length": 100,
+                        "remarks": "number of length of list(default 10)"
+						
+                    },
+					{
+                        "name": "lang",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 2,
+                        "remarks": "language"
+						
+                    }
+                ],
+				"example":{
+					"comId":"COMPANY",
+					"userid":"01000000000",
+					"chkuserid":"2",
+					"startDate":"20150101",
+					"endDate":"20251231",
+					"value":"John F. John",
+					"rankCd":"0101",
+					"page":0,
+					"len":10,
+					"lang":"US"
+				}
+            }
+        },
+        "output": {
+            "description": "List member search",
+            "success": {
+                "status": "Ok",
+                "message": "MemberInfo []",
+                "fields": [
+                    {
+                        "name":"userid",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Member Id",
+						"example":"0100000000"
+                    },
+                    {
+                        "name": "username",
+                        "type": "text",
+                        "required": "",
+                        "length": 50,
+                        "remarks": "Member name",
+						"example":"0100000000"
+                    },
+					{
+                        "name": "regDate",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Registration date(YYYYMMDD)",
+						"example":"09.20.2024"
+                    },
+					{
+                        "name": "rankName",
+                        "type": "text",
+                        "required": "",
+                        "length": 50,
+                        "remarks": "Your rank name",
+						"example":"Silver"
+                    },
+					{
+                        "name": "rankMaxDate",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Promoted date(YYYYMMDD)",
+						"example":"09.20.2024"
+                    },
+					{
+                        "name": "rName",
+                        "type": "text",
+                        "required": "",
+                        "length": 50,
+                        "remarks": "Sponsor name",
+						"example":"Jonh"
+                    },
+					{
+                        "name": "pName",
+                        "type": "text",
+                        "required": "",
+                        "length": 50,
+                        "remarks": "Placement name",
+						"example":"Jonh"
+                    }
+                ]
+            },
+            "error": "null"
+        }
+    },
+	{
+        "menu-parent": "Member",
+        "menu-name": "SearchByRank",
+        "menu-desc": "Search By Rank",
+        "input": {
+            "description": "You must be logged.",
+            "url": "https://{{host}}/find-position",
+            "method": "POST",
+            "content-type": "application/json",
+            "body": {
+                "fields": [
+					{
+                        "name": "comId",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 8,
+                        "remarks": "The Id of company."
+						
+                    },
+                    {
+                        "name": "userid",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 10,
+                        "remarks": "Member Id"
+						
+                    },
+					{
+						"name":"chkUser",
+						"type": "text",
+                        "required": "Required",
+                        "length": 1,
+                        "remarks": "Direct Placement:2, Placement Group:3, Direct Sponsor:5, Sponsor Group:6 (default '2')"
+						
+					},
+                    {
+                        "name": "startDate",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 8,
+                        "remarks": "Registration starts date(YYYYMMDD)"
+						
+                    },
+                    {
+                        "name": "endDate",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 8,
+                        "remarks": "Registration end date(YYYYMMDD)"
+						
+                    },            
+                    {
+                        "name": "rankCd",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 4,
+                        "remarks": "Rank code as defined by the company"
+						
+                    },
+					{
+                        "name": "page",
+                        "type": "int",
+                        "required": "Optional",
+                        "length": 100,
+                        "remarks": "number of pages of list(default 0)"
+						
+                    },
+					{
+                        "name": "len",
+                        "type": "int",
+                        "required": "Optional",
+                        "length": 100,
+                        "remarks": "number of length of list(default 10)"
+						
+                    },
+					{
+                        "name": "lang",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 2,
+                        "remarks": "language"
+						
+                    }
+                ],
+				"example":{
+					"comId":"COMPANY",
+					"userid":"01000000000",
+					"chkUser":"2",
+					"startDate":"20150101",
+					"endDate":"20251231",
+					"rankCd":"0101",
+					"page":0,
+					"len":10,
+					"lang":"US"
+				}
+            }
+        },
+        "output": {
+            "description": "List member search",
+            "success": {
+                "status": "Ok",
+                "message": "MemberInfo []",
+                "fields": [
+                    {
+                        "name":"userid",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Member Id",
+						"example":"0100000000"
+                    },
+                    {
+                        "name": "username",
+                        "type": "text",
+                        "required": "",
+                        "length": 50,
+                        "remarks": "Member name",
+						"example":"0100000000"
+                    },
+					{
+                        "name": "regDate",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Registration date(YYYYMMDD)",
+						"example":"09.20.2024"
+                    },
+					{
+                        "name": "rankName",
+                        "type": "text",
+                        "required": "",
+                        "length": 50,
+                        "remarks": "Your rank name",
+						"example":"Silver"
+                    },
+					{
+                        "name": "updDate",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Promoted date(YYYYMMDD)",
+						"example":"09.20.2024"
+                    },
+					{
+                        "name": "rName",
+                        "type": "text",
+                        "required": "",
+                        "length": 50,
+                        "remarks": "Sponsor name",
+						"example":"Jonh"
+                    },
+					{
+                        "name": "pName",
+                        "type": "text",
+                        "required": "",
+                        "length": 50,
+                        "remarks": "Placement name",
+						"example":"Jonh"
+                    },
+					{
+                        "name": "rId",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Sponsor Id",
+						"example":"0100000000"
+                    },
+					{
+                        "name": "pId",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Placement Id",
+						"example":"0100000000"
+                    }
+                ]
+            },
+            "error": "null"
+        }
+    },
+	{
+        "menu-parent": "Member",
+        "menu-name": "LineGenealogyMap",
+        "menu-desc": "Line Genealogy Map",
+        "input": {
+            "description": "You must be logged.",
+            "url": "https://{{host}}/find-line",
+            "method": "POST",
+            "content-type": "application/json",
+            "body": {
+                "fields": [
+					{
+                        "name": "comId",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 8,
+                        "remarks": "The Id of company."
+						
+                    },
+                    {
+                        "name": "rUserid",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 10,
+                        "remarks": "Member Id"
+						
+                    },
+					{
+                        "name": "rLv",
+                        "type": "int",
+                        "required": "Required",
+                        "length": 100,
+                        "remarks": "Level (if 0 search all)"
+
+                    },
+					{
+						"name":"kind",
+						"type": "text",
+                        "required": "Required",
+                        "length": 1,
+                        "remarks": "Genealogy P:Placement, R:Sponsor"
+						
+					},
+                    {
+                        "name": "rStartDate",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 8,
+                        "remarks": "Registration starts date(YYYYMMDD)"
+						
+                    },
+                    {
+                        "name": "rEndDate",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 8,
+                        "remarks": "Registration end date(YYYYMMDD)"
+						
+                    },            
+                    {
+                        "name": "rRankCd",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 4,
+                        "remarks": "Rank code as defined by the company"
+						
+                    },
+					{
+                        "name": "page",
+                        "type": "int",
+                        "required": "Optional",
+                        "length": 100,
+                        "remarks": "number of pages of list(default 0)"
+						
+                    },
+					{
+                        "name": "len",
+                        "type": "int",
+                        "required": "Optional",
+                        "length": 100,
+                        "remarks": "number of length of list(default 10)"
+						
+                    },
+					{
+                        "name": "lang",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 2,
+                        "remarks": "language"
+						
+                    }
+                ],
+				"example":{
+					"comId":"COMPANY",
+					"rUserid":"01000000000",
+					"rLv":0,
+					"kind":"P",
+					"rStartDate":"20150101",
+					"rEndDate":"20251231",
+					"rRankCd":"0101",
+					"page":0,
+					"len":10,
+					"lang":"US"
+				}
+            }
+        },
+        "output": {
+            "description": "List member search",
+            "success": {
+                "status": "Ok",
+                "message": "MemberInfo []",
+                "fields": [
+                    {
+                        "name":"userid",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Member Id",
+						"example":"0100000000"
+                    },
+                    {
+                        "name": "lv",
+                        "type": "text",
+                        "required": "",
+                        "length": 50,
+                        "remarks": "Level",
+						"example":"1"
+                    },
+					{
+                        "name": "regDate",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Registration date(YYYYMMDD)",
+						"example":"09.20.2024"
+                    },
+					{
+                        "name": "rankName",
+                        "type": "text",
+                        "required": "",
+                        "length": 50,
+                        "remarks": "Your rank name",
+						"example":"Silver"
+                    },
+					{
+                        "name": "updDate",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Promoted date(YYYYMMDD)",
+						"example":"09.20.2024"
+                    },
+					{
+                        "name": "rName",
+                        "type": "text",
+                        "required": "",
+                        "length": 50,
+                        "remarks": "Sponsor name",
+						"example":"Jonh"
+                    },
+					{
+                        "name": "pName",
+                        "type": "text",
+                        "required": "",
+                        "length": 50,
+                        "remarks": "Placement name",
+						"example":"Jonh"
+                    },
+					{
+                        "name": "rId",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Sponsor Id",
+						"example":"0100000000"
+                    },
+					{
+                        "name": "pId",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Placement Id",
+						"example":"0100000000"
+                    }
+                ]
+            },
+            "error": "null"
+        }
+    },
+	{
+        "menu-parent": "Member",
+        "menu-name": "BoxGenealogyMap",
+        "menu-desc": "Box Genealogy Map",
+        "input": {
+            "description": "You must be logged.",
+            "url": "https://{{host}}/find-line",
+            "method": "POST",
+            "content-type": "application/json",
+            "body": {
+                "fields": [
+					{
+                        "name": "comId",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 8,
+                        "remarks": "The Id of company.",
+						"example":"COMPANY"
+                    },
+                    {
+                        "name": "rUserid",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 10,
+                        "remarks": "Member Id",
+						"example":"01000000000"
+                    },
+					{
+                        "name": "rLv",
+                        "type": "int",
+                        "required": "Required",
+                        "length": 100,
+                        "remarks": "Level (if 0 search all)",
+						"example":0
+                    },
+					{
+						"name": "dateKind",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 1,
+                        "remarks": "Date Type('1':Order date, '2':Approval Date)"
+						
+					},					
+					{
+						"name":"kind",
+						"type": "text",
+                        "required": "Required",
+                        "length": 1,
+                        "remarks": "Genealogy P:Placement, R:Sponsor"
+						
+					},
+                    {
+                        "name": "rStartDate",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 8,
+                        "remarks": "Registration starts date(YYYYMMDD)"
+						
+                    },
+                    {
+                        "name": "rEndDate",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 8,
+                        "remarks": "Registration end date(YYYYMMDD)"
+						
+                    },            
+                    {
+                        "name": "rRankCd",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 4,
+                        "remarks": "Rank code as defined by the company"
+						
+                    },
+					{
+                        "name": "page",
+                        "type": "int",
+                        "required": "Optional",
+                        "length": 100,
+                        "remarks": "number of pages of list(default 0)"
+						
+                    },
+					{
+                        "name": "len",
+                        "type": "int",
+                        "required": "Optional",
+                        "length": 100,
+                        "remarks": "number of length of list(default 10)"
+						
+                    },
+					{
+                        "name": "lang",
+                        "type": "text",
+                        "required": "Optional",
+                        "length": 2,
+                        "remarks": "language"
+						
+                    }
+                ],
+				"example":{
+					"comId":"COMPANY",
+					"rUserid":"01000000000",
+					"rLv":0,
+					"dateKind":"1",
+					"kind":"P",
+					"rStartDate":"20150101",
+					"rEndDate":"20251231",
+					"rRankCd":"0101",
+					"page":0,
+					"len":10,
+					"lang":"US"
+				}
+            }
+        },
+        "output": {
+            "description": "List member search",
+            "success": {
+                "status": "Ok",
+                "message": "MemberInfo []",
+                "fields": [
+                    {
+                        "name":"userid",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Member Id",
+						"example":"0100000000"
+                    },
+					{
+                        "name": "username",
+                        "type": "text",
+                        "required": "",
+                        "length": 50,
+                        "remarks": "Member name",
+						"example":"0100000000"
+                    },
+                    {
+                        "name": "lv",
+                        "type": "text",
+                        "required": "",
+                        "length": 50,
+                        "remarks": "Level",
+						"example":"1"
+                    },
+					{
+                        "name": "regDate",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Registration date(YYYYMMDD)",
+						"example":"09.20.2024"
+                    },
+					{
+                        "name": "rankName",
+                        "type": "text",
+                        "required": "",
+                        "length": 50,
+                        "remarks": "Your rank name",
+						"example":"Silver"
+                    },
+					{
+                        "name": "rName",
+                        "type": "text",
+                        "required": "",
+                        "length": 50,
+                        "remarks": "Sponsor name",
+						"example":"Jonh"
+                    },
+					{
+                        "name": "pName",
+                        "type": "text",
+                        "required": "",
+                        "length": 50,
+                        "remarks": "Placement name",
+						"example":"Jonh"
+                    },
+					{
+                        "name": "rId",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Sponsor Id",
+						"example":"0100000000"
+                    },
+					{
+                        "name": "pId",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Placement Id",
+						"example":"0100000000"
+                    }
+                ]
+            },
+            "error": "null"
+        }
+    },
+	{
+        "menu-parent": "Member",
+        "menu-name": "AggregatebyRank",
+        "menu-desc": "Aggregate by Rank",
+        "input": {
+            "description": "You must be logged.",
+            "url": "https://{{host}}?userid={{userid}}&comid={{comId}}&typesearch={{type}}",
+            "method": "GET",
+            "content-type": "application/json",
+            "body": {
+                "fields": [
+					{
+                        "name": "comId",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 8,
+                        "remarks": "The Id of company."
+						
+                    },
+                    {
+                        "name": "userid",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 10,
+                        "remarks": "Member Id"
+						
+                    },
+					{
+                        "name": "type",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 10,
+                        "remarks": "Default 'member'"
+						
+                    }
+                ],
+				"example":{
+					"comId":"COMPANY",
+					"userid":"01000000000",
+					"type":"member"
+				}
+            }
+        },
+        "output": {
+            "description": "List member search",
+            "success": {
+                "status": "Ok",
+                "message": "MemberInfo []",
+                "fields": [
+                    {
+                        "name":"cntMem",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Number of members in rank",
+						"example":"10"
+                    },
+					{
+                        "name": "rankName",
+                        "type": "text",
+                        "required": "",
+                        "length": 50,
+                        "remarks": "Rank name",
+						"example":"test"
+                    }
+                ]
+            },
+            "error": "null"
+        }
+    },
+	{
+        "menu-parent": "Member",
+        "menu-name": "MonthlyEnrollmentCounting",
+        "menu-desc": "Monthly Enrollment Counting",
+        "input": {
+            "description": "You must be logged.",
+            "url": "https://{{host}}?userid={userid}&comid={comId}&typesearch={type}",
+            "method": "GET",
+            "content-type": "application/json",
+            "body": {
+                "fields": [
+					{
+                        "name": "comId",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 8,
+                        "remarks": "The Id of company.",
+						"example":"COMPANY"
+                    },
+                    {
+                        "name": "userid",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 10,
+                        "remarks": "Member Id",
+						"example":"01000000000"
+                    },
+					{
+                        "name": "type",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 10,
+                        "remarks": "Default 'member'",
+						"example":"member"
+                    }
+                ],
+				"example":{
+					"comId":"COMPANY",
+					"userid":"01000000000",
+					"type":"member"
+				}
+            }
+        },
+        "output": {
+            "description": "List member search",
+            "success": {
+                "status": "Ok",
+                "message": "MemberInfo []",
+                "fields": [
+                    {
+                        "name":"cnt",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Total number of members registered in the month",
+						"example":"10"
+                    },
+					{
+                        "name": "year",
+                        "type": "text",
+                        "required": "",
+                        "length": 4,
+                        "remarks": "Year",
+						"example":"2025"
+                    },
+					{
+                        "name": "m01",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Number of members registered in January",
+						"example":"10"
+                    },
+					{
+                        "name": "m02",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Number of members registered in February",
+						"example":"10"
+                    },
+					{
+                        "name": "m03",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Number of members registered in March",
+						"example":"10"
+                    },	
+					{
+                        "name": "m04",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Number of members registered in April",
+						"example":"10"
+                    },
+					{
+                        "name": "m05",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Number of members registered in May",
+						"example":"10"
+                    },
+					{
+                        "name": "m06",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Number of members registered in June",
+						"example":"10"
+                    },
+					{
+                        "name": "m07",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Number of members registered in July",
+						"example":"10"
+                    },
+					{
+                        "name": "m08",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Number of members registered in August",
+						"example":"10"
+                    },
+					{
+                        "name": "m09",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Number of members registered in September",
+						"example":"10"
+                    },
+					{
+                        "name": "m10",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Number of members registered in October",
+						"example":"10"
+                    },
+					{
+                        "name": "m11",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Number of members registered in November",
+						"example":"10"
+                    },
+					{
+                        "name": "m12",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Number of members registered in December",
+						"example":"10"
+                    }
+					
+                ]
+            },
+            "error": "null"
+        }
+    },
+    {
+        "menu-parent": "Member",
+        "menu-name": "AggregatebyAge",
+        "menu-desc": "Aggregate by Age",
+        "input": {
+            "description": "You must be logged.",
+            "url": "https://{{host}}?userid={userid}&comid={comId}&typesearch={type}",
+            "method": "GET",
+            "content-type": "application/json",
+            "body": {
+                "fields": [
+					{
+                        "name": "comId",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 8,
+                        "remarks": "The Id of company."
+						
+                    },
+                    {
+                        "name": "userid",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 10,
+                        "remarks": "Member Id"
+                    },
+					{
+                        "name": "type",
+                        "type": "text",
+                        "required": "Required",
+                        "length": 10,
+                        "remarks": "Default 'member'"
+                    }
+                ],
+				"example":{
+					"comId":"COMPANY",
+					"userid":"01000000000",
+					"type":"member"
+				}
+            }
+        },
+        "output": {
+            "description": "List member search",
+            "success": {
+                "status": "Ok",
+                "message": "MemberInfo []",
+                "fields": [
+                    {
+                        "name":"age",
+                        "type": "text",
+                        "required": "",
+                        "length": 10,
+                        "remarks": "Age of registered members",
+						"example":"10"
+                    },
+					{
+                        "name": "sum",
+                        "type": "text",
+                        "required": "",
+                        "length": 4,
+                        "remarks": "Total number of members by age registered",
+						"example":"1"
+                    }										
+                ]
+            },
+            "error": "null"
+        }
+    }
+    
+]
