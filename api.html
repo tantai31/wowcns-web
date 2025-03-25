@@ -29,7 +29,7 @@
 <body>
     <script>
         var jsonData = '';
-        $.getJSON("/assets/json/Wowcns-Document-API-v1.json", function (data) {
+        $.getJSON("./assets/json/Wowcns-Document-API-v1.json", function (data) {
             console.log(data);
             jsonData = data;
             drawMenuParent(data);
