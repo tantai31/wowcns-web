@@ -888,10 +888,7 @@ div.marquee>a>img {
     cursor: pointer;
     /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
     transition: background 0.3s;
-<<<<<<< HEAD
     padding: 16px 16px 0px 16px;
-=======
->>>>>>> 3277fd09b20f791d2e649c94af5de6d2c0827d9a
 }
 .nav-tabs .nav-link.active {
     color: #287AA8;
@@ -920,13 +917,10 @@ div.marquee>a>img {
     color:  #fff;
     background-color: #000;
     border-bottom: #fff;
-<<<<<<< HEAD
     padding: 16px 16px 0px 32px;
 }
 .submenu .list-group-item:last-child{
     /* padding: 16px; */
-=======
->>>>>>> 3277fd09b20f791d2e649c94af5de6d2c0827d9a
 }
 /* Khu vực nội dung chính */
 .content-container {
@@ -939,15 +933,12 @@ div.marquee>a>img {
     text-align: center;
     font-size: 18px;
 }
-<<<<<<< HEAD
 .list-group-item-action:focus, .list-group-item-action:hover {
     z-index: 1;
     color: #287AA8;
     text-decoration: none;
     background-color: #000000;
 }
-=======
->>>>>>> 3277fd09b20f791d2e649c94af5de6d2c0827d9a
 .menu-item-api.active{
     color: #287AA8;
     font-weight: 600;
@@ -959,13 +950,9 @@ div.marquee>a>img {
 .hidden-api {
     display: none;
 }
-<<<<<<< HEAD
 .content .menu-item-api {
     padding: 0px;
 }
-=======
-
->>>>>>> 3277fd09b20f791d2e649c94af5de6d2c0827d9a
 /* Tabs bên phải */
 .tabs-api {
     width: 200px;
