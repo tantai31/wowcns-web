@@ -381,62 +381,62 @@
             "length": 5,
             "remarks": "Worker number(default 'GUEST')"
           }
-        ]
-      },
-      "example": {
-        "COMPANY": "COMPANY",
-        "userid": "0100000000",
-        "username": "Jonh...",
-        "usernameKana": "テスト",
-        "givenName": "John",
-        "middleName": "F.",
-        "familyName": "John",
-        "nickname": "test",
-        "comName": "companyname",
-        "regKind": "O",
-        "regDate": "20250324",
-        "loginId": "test",
-        "passwd": "123456",
-        "ctrCd": "US",
-        "userKind": "01U10",
-        "cntCd": "01000",
-        "grpCd": "01G01",
-        "abPos": 1,
-        "pId": "0100000000",
-        "rId": "0100000000",
-        "cId": "0100000000",
-        "sId": "0100000000",
-        "rankCd": "0101",
-        "bankCd": "01B999",
-        "accNo": "1234123412341234",
-        "depositor": "test",
-        "juminNo": "1234-1234-1234-1234",
-        "taxNo": "1234132412341234",
-        "taxKind": "PSN",
-        "birthday": "19990324",
-        "gender": "M",
-        "tel": "123412341234",
-        "mobile": "123412341234",
-        "email": "example@gmail.com",
-        "post": "90020",
-        "state": "CA",
-        "city": "Los Angeles",
-        "country": "US",
-        "addr1": "123 Street",
-        "addr2": "Department 345",
-        "okDateSMS": "Y",
-        "okDateEmail": "Y",
-        "dateEdu": "20250324",
-        "dateSendCert": "20250324",
-        "dateSendBook": "20250324",
-        "dateGetParent": "20250324",
-        "dateGetRegist": "20250324",
-        "dateGetJumin": "20250324",
-        "dateGetTax": "20250324",
-        "dateGetBank": "20250324",
-        "notice": "this is notice...",
-        "remark": "this is remark...",
-        "workUser": "GUEST"
+        ],
+        "example": {
+          "COMPANY": "COMPANY",
+          "userid": "0100000000",
+          "username": "Jonh...",
+          "usernameKana": "テスト",
+          "givenName": "John",
+          "middleName": "F.",
+          "familyName": "John",
+          "nickname": "test",
+          "comName": "companyname",
+          "regKind": "O",
+          "regDate": "20250324",
+          "loginId": "test",
+          "passwd": "123456",
+          "ctrCd": "US",
+          "userKind": "01U10",
+          "cntCd": "01000",
+          "grpCd": "01G01",
+          "abPos": 1,
+          "pId": "0100000000",
+          "rId": "0100000000",
+          "cId": "0100000000",
+          "sId": "0100000000",
+          "rankCd": "0101",
+          "bankCd": "01B999",
+          "accNo": "1234123412341234",
+          "depositor": "test",
+          "juminNo": "1234-1234-1234-1234",
+          "taxNo": "1234132412341234",
+          "taxKind": "PSN",
+          "birthday": "19990324",
+          "gender": "M",
+          "tel": "123412341234",
+          "mobile": "123412341234",
+          "email": "example@gmail.com",
+          "post": "90020",
+          "state": "CA",
+          "city": "Los Angeles",
+          "country": "US",
+          "addr1": "123 Street",
+          "addr2": "Department 345",
+          "okDateSMS": "Y",
+          "okDateEmail": "Y",
+          "dateEdu": "20250324",
+          "dateSendCert": "20250324",
+          "dateSendBook": "20250324",
+          "dateGetParent": "20250324",
+          "dateGetRegist": "20250324",
+          "dateGetJumin": "20250324",
+          "dateGetTax": "20250324",
+          "dateGetBank": "20250324",
+          "notice": "this is notice...",
+          "remark": "this is remark...",
+          "workUser": "GUEST"
+        }
       }
     },
     "output": {
@@ -564,19 +564,19 @@
             "length": 2,
             "remarks": "language"
           }
-        ]
-      },
-      "example": {
-        "comId": "COMPANY",
-        "userid": "01000000000",
-        "chkuserid": "2",
-        "startDate": "20150101",
-        "endDate": "20251231",
-        "value": "John F. John",
-        "rankCd": "0101",
-        "page": 0,
-        "len": 10,
-        "lang": "US"
+        ],
+        "example": {
+          "comId": "COMPANY",
+          "userid": "01000000000",
+          "chkuserid": "2",
+          "startDate": "20150101",
+          "endDate": "20251231",
+          "value": "John F. John",
+          "rankCd": "0101",
+          "page": 0,
+          "len": 10,
+          "lang": "US"
+        }
       }
     },
     "output": {
@@ -720,18 +720,18 @@
             "length": 2,
             "remarks": "language"
           }
-        ]
-      },
-      "example": {
-        "comId": "COMPANY",
-        "userid": "01000000000",
-        "chkUser": "2",
-        "startDate": "20150101",
-        "endDate": "20251231",
-        "rankCd": "0101",
-        "page": 0,
-        "len": 10,
-        "lang": "US"
+        ],
+        "example": {
+          "comId": "COMPANY",
+          "userid": "01000000000",
+          "chkUser": "2",
+          "startDate": "20150101",
+          "endDate": "20251231",
+          "rankCd": "0101",
+          "page": 0,
+          "len": 10,
+          "lang": "US"
+        }
       }
     },
     "output": {
@@ -898,19 +898,19 @@
             "length": 2,
             "remarks": "language"
           }
-        ]
-      },
-      "example": {
-        "comId": "COMPANY",
-        "rUserid": "01000000000",
-        "rLv": 0,
-        "kind": "P",
-        "rStartDate": "20150101",
-        "rEndDate": "20251231",
-        "rRankCd": "0101",
-        "page": 0,
-        "len": 10,
-        "lang": "US"
+        ],
+        "example": {
+          "comId": "COMPANY",
+          "rUserid": "01000000000",
+          "rLv": 0,
+          "kind": "P",
+          "rStartDate": "20150101",
+          "rEndDate": "20251231",
+          "rRankCd": "0101",
+          "page": 0,
+          "len": 10,
+          "lang": "US"
+        }
       }
     },
     "output": {
@@ -1087,20 +1087,20 @@
             "length": 2,
             "remarks": "language"
           }
-        ]
-      },
-      "example": {
-        "comId": "COMPANY",
-        "rUserid": "01000000000",
-        "rLv": 0,
-        "dateKind": "1",
-        "kind": "P",
-        "rStartDate": "20150101",
-        "rEndDate": "20251231",
-        "rRankCd": "0101",
-        "page": 0,
-        "len": 10,
-        "lang": "US"
+        ],
+        "example": {
+          "comId": "COMPANY",
+          "rUserid": "01000000000",
+          "rLv": 0,
+          "dateKind": "1",
+          "kind": "P",
+          "rStartDate": "20150101",
+          "rEndDate": "20251231",
+          "rRankCd": "0101",
+          "page": 0,
+          "len": 10,
+          "lang": "US"
+        }
       }
     },
     "output": {
@@ -1218,12 +1218,12 @@
             "length": 10,
             "remarks": "Default 'member'"
           }
-        ]
-      },
-      "example": {
-        "comId": "COMPANY",
-        "userid": "01000000000",
-        "type": "member"
+        ],
+        "example": {
+          "comId": "COMPANY",
+          "userid": "01000000000",
+          "type": "member"
+        }
       }
     },
     "output": {
@@ -1288,12 +1288,12 @@
             "remarks": "Default 'member'",
             "example": "member"
           }
-        ]
-      },
-      "example": {
-        "comId": "COMPANY",
-        "userid": "01000000000",
-        "type": "member"
+        ],
+        "example": {
+          "comId": "COMPANY",
+          "userid": "01000000000",
+          "type": "member"
+        }
       }
     },
     "output": {
@@ -1451,12 +1451,12 @@
             "length": 10,
             "remarks": "Default 'member'"
           }
-        ]
-      },
-      "example": {
-        "comId": "COMPANY",
-        "userid": "01000000000",
-        "type": "member"
+        ],
+        "example": {
+          "comId": "COMPANY",
+          "userid": "01000000000",
+          "type": "member"
+        }
       }
     },
     "output": {
