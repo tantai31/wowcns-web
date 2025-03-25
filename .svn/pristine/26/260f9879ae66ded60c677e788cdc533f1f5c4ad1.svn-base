@@ -75,8 +75,7 @@
             let url = '';
             let method = '';
             let contentType = '';
-            let message = '';
-            debugger
+
             jsonData.forEach(item => {
                 let menuName = item["menu-name"];
                 if (menuName == childId) {
@@ -87,12 +86,11 @@
                     url = item["input"]["url"];
                     method = item["input"]["method"];
                     contentType = item["input"]["content-type"];
-                    message = item["output"]["success"]["message"];
                 }
             });
 
             this.drawBodyRequest(fieldsRequest);
-            this.drawBodyResponse(fieldsResponse, message);
+            this.drawBodyResponse(fieldsResponse);
             this.drawBodyResponseFail(fieldsResponseFail);
             this.drawExample(example, url, method, contentType);
 
@@ -107,7 +105,7 @@
                 $("#tab2").removeClass("active");
             }
         }
-        
+
         function drawBodyRequest(data) {
             let tbodyRequest = '';
             for (var i = 0; i < data.length; i++) {
@@ -123,7 +121,7 @@
             $("#tbodyRequest").html(tbodyRequest);
         }
 
-        function drawBodyResponse(data , message) {
+        function drawBodyResponse(data) {
             let tbodyResponse = '';
             for (var i = 0; i < data.length; i++) {
                 tbodyResponse += '<tr>';
@@ -134,7 +132,6 @@
                 tbodyResponse += '</tr>';
             }
             $("#tbodyResponse").html(tbodyResponse);
-            $('#responeArr').text(message)
         }
 
         function drawBodyResponseFail(data) {
@@ -291,9 +288,8 @@
                                                 </tbody>
                                               </table>
                                         </div>
-                                        <div class="tab-pane fade show py-4"> Response parameters                                            
+                                        <div class="tab-pane fade show py-4"> Response parameters
                                             <div class="mt-5">
-                                                <div id="responeArr"></div>
                                                 <table class="table table-striped table-dark">
                                                     <thead>
                                                         <tr>
