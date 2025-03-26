@@ -3450,10 +3450,10 @@
   },
   {
     "menu-parent": "Checkout",
-    "menu-name": "load card information",
+    "menu-name": "Save order temporary",
     "menu-desc": "Display product information about to buy",
     "input": {
-      "description": "load card information",
+      "description": "Save order temporary",
       "url": "{{host}}/api/ordreg/tmp-save",
       "method": "POST",
       "content-type": "application/json",
