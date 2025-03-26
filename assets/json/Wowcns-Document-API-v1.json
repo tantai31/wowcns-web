@@ -4386,8 +4386,8 @@
     }
   },
   {
-    "menu-parent": "Shopping",
-    "menu-name": "Shop",
+    "menu-parent": "Shopping-Mall",
+    "menu-name": "Shopping",
     "menu-desc": "List of products by category",
     "input": {
       "url": "https://yourcompany-api.com/api/product/search",
@@ -4468,7 +4468,7 @@
       "notes": "Product List",
       "success": {
         "status": "OK",
-        "message": "",
+        "message": "OrdPdtModel []",
         "fields": [
           {
             "name": "ordNo",
@@ -5505,6 +5505,1120 @@
             "required": "",
             "length": 10,
             "remarks": "Page Number"
+          }
+        ]
+      }
+    },
+    "error": "null"
+  },
+  {
+    "menu-parent": "Shopping-Mall",
+    "menu-name": "Product",
+    "menu-desc": "Product details",
+    "input": {
+  	"url": "https://yourcompany-api.com/api/product/info?comId={{comId}}&pdtCd={{pdtCd}}",
+        "method": "GET",
+        "content-type": "application/json",
+        "body": {
+            "fields": [
+                {
+                  "name": "comId",
+                  "type": "text",
+                  "required": "required",
+                  "length": 8,
+                  "remarks": "Company ID"
+                },
+                {
+                  "name": "pdtCd",
+                  "type": "text",
+                  "required": "required",
+                  "length": 20,
+                  "remarks": "Product Code"
+                }
+            ]
+        },
+        "example": {
+          "comId": "Company ID",
+          "pdtCd": "Product Code"
+        }
+    },
+    "output": {
+        "notes": "Product Information",
+        "success": {
+            "status": "Ok",
+            "message": "PdtDetailModel",
+            "fields ": [
+                {
+                "name": "pdtName",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " product name"
+              },
+              {
+                "name": "pdtCd",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " product code"
+              },
+              {
+                "name": "pdtNameOrg",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " original product name"
+              },
+              {
+                "name": "retailAmt",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " retail amount"
+              },
+              {
+                "name": "retailPoint",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " retail point"
+              },
+              {
+                "name": "amt",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " amount"
+              },
+              {
+                "name": "point",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " point"
+              },
+              {
+                "name": "pv1",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " pv1"
+              },
+              {
+                "name": "pv2",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " pv2"
+              },
+              {
+                "name": "pv3",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " pv3"
+              },
+              {
+                "name": "pv1Percent",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " pv1 percent"
+              },
+              {
+                "name": "pv2Percent",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " pv2 percent"
+              },
+              {
+                "name": "filePath",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " file path"
+              },
+              {
+                "name": "fileName",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " file name"
+              },
+              {
+                "name": "fileNameOrg",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " original file name"
+              },
+              {
+                "name": "filePath1",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " file path 1"
+              },
+              {
+                "name": "fileName1",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " file name 1"
+              },
+              {
+                "name": "fileNameOrg1",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " original file name 1"
+              },
+              {
+                "name": "filePath2",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " file path 2"
+              },
+              {
+                "name": "fileName2",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " file name 2"
+              },
+              {
+                "name": "fileNameOrg2",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " original file name 2"
+              },
+              {
+                "name": "imageKind",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " image kind"
+              },
+              {
+                "name": "rate",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " rate"
+              },
+              {
+                "name": "linkInfo",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " link info"
+              },
+              {
+                "name": "pdtWeight",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " product weight"
+              },
+              {
+                "name": "cateCd",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " category code"
+              },
+              {
+                "name": "cateName",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " category name"
+              },
+              {
+                "name": "cateNameOrg",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " original category name"
+              },
+              {
+                "name": "lv",
+                "type": "int",
+                "required": "",
+                "length": 50,
+                "remarks": " level"
+              },
+              {
+                "name": "seq",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " sequence"
+              },
+              {
+                "name": "notifyNo",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " notify number"
+              },
+              {
+                "name": "kindName",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " kind name"
+              },
+              {
+                "name": "notifyName",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " notify name"
+              },
+              {
+                "name": "notifyTexts",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " notify texts"
+              },
+              {
+                "name": "option1",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " option 1"
+              },
+              {
+                "name": "option2",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " option 2"
+              },
+              {
+                "name": "option3",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " option 3"
+              },
+              {
+                "name": "saleMinQty",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " sale minimum quantity"
+              },
+              {
+                "name": "saleMaxQty",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " sale maximum quantity"
+              },
+              {
+                "name": "consumerYn",
+                "type": "text",
+                "required": "",
+                "length": 1,
+                "remarks": " consumer Y/N"
+              },
+              {
+                "name": "supplyAmt",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " supply amount"
+              },
+              {
+                "name": "adoYN",
+                "type": "text",
+                "required": "",
+                "length": 1,
+                "remarks": " autoship Y/N"
+              },
+              {
+                "name": "status",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " status"
+              },
+              {
+                "name": "saleYN",
+                "type": "text",
+                "required": "",
+                "length": 1,
+                "remarks": " sale Y/N"
+              },
+              {
+                "name": "wishYN",
+                "type": "text",
+                "required": "",
+                "length": 1,
+                "remarks": " wish Y/N"
+              },
+              {
+                "name": "hashtag",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": " hashtag"
+              },
+              {
+                "name": "newYN",
+                "type": "text",
+                "required": "",
+                "length": 1,
+                "remarks": "new Y/N"
+              },
+              {
+                "name": "eventYN",
+                "type": "text",
+                "required": "",
+                "length": 1,
+                "remarks": "event Y/N"
+              },
+              {
+                "name": "hotSaleYN",
+                "type": "text",
+                "required": "",
+                "length": 1,
+                "remarks": "hot sale Y/N"
+              },
+              {
+                "name": "bestYN",
+                "type": "text",
+                "required": "",
+                "length": 1,
+                "remarks": "best Y/N"
+              },
+              {
+                "name": "recommYN",
+                "type": "text",
+                "required": "",
+                "length": 1,
+                "remarks": "recommend Y/N"
+              },
+              {
+                "name": "brandHallYN",
+                "type": "text",
+                "required": "",
+                "length": 1,
+                "remarks": "brand hall Y/N"
+              },
+              {
+                "name": "jointStr",
+                "type": "int",
+                "required": "",
+                "length": 50,
+                "remarks": "joint start"
+              },
+              {
+                "name": "jointEnd",
+                "type": "int",
+                "required": "",
+                "length": 50,
+                "remarks": "joint end"
+              },
+              {
+                "name": "reviewsCnt",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": "reviews count"
+              },
+              {
+                "name": "grades",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": "grades"
+              },
+              {
+                "name": "rating",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": "rating"
+              },
+              {
+                "name": "amtPoint",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": "amount point"
+              },
+              {
+                "name": "retailAmtPoint",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": "retail amount point"
+              },
+              {
+                "name": "rateAmtRetail",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": "rate amount retail"
+              },
+              {
+                "name": "saleSDate",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": "sale start date"
+              },
+              {
+                "name": "saleEDate",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": "sale end date"
+              },
+              {
+                "name": "pdtQty",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": "product quantity"
+              },
+              {
+                "name": "packageText",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": "package text"
+              },
+              {
+                "name": "stockYn",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": "stock Y/N"
+              },
+              {
+                "name": "remark",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": "remark"
+              },
+              {
+                "name": "newSDate",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": "new start date"
+              },
+              {
+                "name": "newEDate",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": "new end date"
+              },
+              {
+                "name": "recomnSDate",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": "recommend start date"
+              },
+              {
+                "name": "recomnEDate",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": "recommend end date"
+              },
+              {
+                "name": "eventSDate",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": "event start date"
+              },
+              {
+                "name": "eventEDate",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": "event end date"
+              },
+              {
+                "name": "pcateCd",
+                "type": "text",
+                "required": "",
+                "length": 50,
+                "remarks": "parent category code"
+              }
+            ]
+        }
+    },
+    "error": "null"
+  },
+  {
+    "menu-parent": "Shopping-Mall",
+    "menu-name": "Product",
+    "menu-desc": "Product details",
+    "input": {
+      "url": "https://yourcompany-api.com/api/product/info-image?comId={{comId}}&pdtCd={{pdtCd}}&pathKind={{pathKind}}",
+      "method": "GET",
+      "content-type": "application/json",
+      "body": {
+        "fields": [
+          {
+            "name": "comId",
+            "type": "text",
+            "required": "required",
+            "length": 8,
+            "remarks": "Company ID"
+          },
+          {
+            "name": "pdtCd",
+            "type": "text",
+            "required": "required",
+            "length": 20,
+            "remarks": "Product Code"
+          },
+          {
+            "name": "pathKind",
+            "type": "text",
+            "required": "required",
+            "length": 20,
+            "remarks": "Device type (PC / PHONE)"
+          }
+        ]
+      },
+      "example": {
+        "comId": "Company ID",
+        "pdtCd": "Product Code",
+        "pathKind": "PC"
+      }
+    },
+    "output": {
+      "notes": "Product image",
+      "success": {
+        "status": "OK",
+        "message": "PdtDetailModel []",
+        "fields ": [
+          {
+            "name": "pdtName",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " product name"
+          },
+          {
+            "name": "pdtCd",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " product code"
+          },
+          {
+            "name": "pdtNameOrg",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " original product name"
+          },
+          {
+            "name": "retailAmt",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " retail amount"
+          },
+          {
+            "name": "retailPoint",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " retail point"
+          },
+          {
+            "name": "amt",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " amount"
+          },
+          {
+            "name": "point",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " point"
+          },
+          {
+            "name": "pv1",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " pv1"
+          },
+          {
+            "name": "pv2",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " pv2"
+          },
+          {
+            "name": "pv3",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " pv3"
+          },
+          {
+            "name": "pv1Percent",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " pv1 percent"
+          },
+          {
+            "name": "pv2Percent",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " pv2 percent"
+          },
+          {
+            "name": "filePath",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " file path"
+          },
+          {
+            "name": "fileName",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " file name"
+          },
+          {
+            "name": "fileNameOrg",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " original file name"
+          },
+          {
+            "name": "filePath1",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " file path 1"
+          },
+          {
+            "name": "fileName1",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " file name 1"
+          },
+          {
+            "name": "fileNameOrg1",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " original file name 1"
+          },
+          {
+            "name": "filePath2",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " file path 2"
+          },
+          {
+            "name": "fileName2",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " file name 2"
+          },
+          {
+            "name": "fileNameOrg2",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " original file name 2"
+          },
+          {
+            "name": "imageKind",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " image kind"
+          },
+          {
+            "name": "rate",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " rate"
+          },
+          {
+            "name": "linkInfo",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " link info"
+          },
+          {
+            "name": "pdtWeight",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " product weight"
+          },
+          {
+            "name": "cateCd",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " category code"
+          },
+          {
+            "name": "cateName",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " category name"
+          },
+          {
+            "name": "cateNameOrg",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " original category name"
+          },
+          {
+            "name": "lv",
+            "type": "int",
+            "required": "",
+            "length": 50,
+            "remarks": " level"
+          },
+          {
+            "name": "seq",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " sequence"
+          },
+          {
+            "name": "notifyNo",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " notify number"
+          },
+          {
+            "name": "kindName",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " kind name"
+          },
+          {
+            "name": "notifyName",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " notify name"
+          },
+          {
+            "name": "notifyTexts",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " notify texts"
+          },
+          {
+            "name": "option1",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " option 1"
+          },
+          {
+            "name": "option2",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " option 2"
+          },
+          {
+            "name": "option3",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " option 3"
+          },
+          {
+            "name": "saleMinQty",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " sale minimum quantity"
+          },
+          {
+            "name": "saleMaxQty",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " sale maximum quantity"
+          },
+          {
+            "name": "consumerYn",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": " consumer Y/N"
+          },
+          {
+            "name": "supplyAmt",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " supply amount"
+          },
+          {
+            "name": "adoYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": " autoship Y/N"
+          },
+          {
+            "name": "status",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " status"
+          },
+          {
+            "name": "saleYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": " sale Y/N"
+          },
+          {
+            "name": "wishYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": " wish Y/N"
+          },
+          {
+            "name": "hashtag",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": " hashtag"
+          },
+          {
+            "name": "newYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": "new Y/N"
+          },
+          {
+            "name": "eventYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": "event Y/N"
+          },
+          {
+            "name": "hotSaleYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": "hot sale Y/N"
+          },
+          {
+            "name": "bestYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": "best Y/N"
+          },
+          {
+            "name": "recommYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": "recommend Y/N"
+          },
+          {
+            "name": "brandHallYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": "brand hall Y/N"
+          },
+          {
+            "name": "jointStr",
+            "type": "int",
+            "required": "",
+            "length": 50,
+            "remarks": "joint start"
+          },
+          {
+            "name": "jointEnd",
+            "type": "int",
+            "required": "",
+            "length": 50,
+            "remarks": "joint end"
+          },
+          {
+            "name": "reviewsCnt",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "reviews count"
+          },
+          {
+            "name": "grades",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "grades"
+          },
+          {
+            "name": "rating",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "rating"
+          },
+          {
+            "name": "amtPoint",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "amount point"
+          },
+          {
+            "name": "retailAmtPoint",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "retail amount point"
+          },
+          {
+            "name": "rateAmtRetail",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "rate amount retail"
+          },
+          {
+            "name": "saleSDate",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "sale start date"
+          },
+          {
+            "name": "saleEDate",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "sale end date"
+          },
+          {
+            "name": "pdtQty",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "product quantity"
+          },
+          {
+            "name": "packageText",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "package text"
+          },
+          {
+            "name": "stockYn",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "stock Y/N"
+          },
+          {
+            "name": "remark",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "remark"
+          },
+          {
+            "name": "newSDate",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "new start date"
+          },
+          {
+            "name": "newEDate",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "new end date"
+          },
+          {
+            "name": "recomnSDate",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "recommend start date"
+          },
+          {
+            "name": "recomnEDate",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "recommend end date"
+          },
+          {
+            "name": "eventSDate",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "event start date"
+          },
+          {
+            "name": "eventEDate",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "event end date"
+          },
+          {
+            "name": "pcateCd",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "parent category code"
           }
         ]
       }
