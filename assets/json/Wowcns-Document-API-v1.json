@@ -3286,7 +3286,7 @@
   },
   {
     "menu-parent": "Checkout",
-    "menu-name": "load card information",
+    "menu-name": "Load card information",
     "menu-desc": "Display product information about to buy",
     "input": {
       "description": "load card information",
@@ -3763,6 +3763,624 @@
         {
           "error-code": "401",
           "message": ""
+        }
+      ]
+    }
+  },
+  {
+    "menu-parent": "Checkout",
+    "menu-name": "Last Shipping Address",
+    "menu-desc": "Display last shipping address",
+    "input": {
+      "description": "Last Shipping Address",
+      "url": "{{host}}/api/popup/deli/search/{{userId}}?comid={{comId}}&page=0&len=10",
+      "method": "GET",
+      "content-type": "application/json",
+      "body": {
+        "fields": [
+          {
+            "name": "comid",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "Company ID"
+          },
+          {
+            "name": "userid",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "User ID"
+          },
+          {
+            "name": "page",
+            "type": "int",
+            "required": "required",
+            "length": 10,
+            "remarks": "page number"
+          },
+          {
+            "name": "len",
+            "type": "int",
+            "required": "required",
+            "length": 10,
+            "remarks": "page length"
+          }
+        ]
+      },
+      "example": "https:/{{host}}/api/popup/deli/search/81291800?comid=MEDIUSTH&page=0&len=10"
+    },
+    "output": {
+      "description": "Last Shipping Address",
+      "success": {
+        "status": "Ok",
+        "message": "OrderMstModel []",
+        "fields ": [
+          {
+            "name": "rName",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "recipient name"
+          },
+          {
+            "name": "rMobile",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "recipient mobile"
+          },
+          {
+            "name": "rAddr1",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "recipient address 1"
+          },
+          {
+            "name": "rAddr2",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "recipient address 2"
+          }
+        ]
+      },
+      "error": [
+        {
+          "error-code": "403",
+          "message": "System busy please try again"
+        }
+      ]
+    }
+  },
+  {
+    "menu-parent": "Checkout",
+    "menu-name": "Payment",
+    "menu-desc": "Process payment and create order",
+    "input": {
+      "description": "Process payment and create order",
+      "url": "{{host}}/api/ordreg/ord-money-tmp",
+      "method": "POST",
+      "content-type": "application/json",
+      "body": {
+        "fields": [
+          {
+            "name": "accDate",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "account date"
+          },
+          {
+            "name": "amt",
+            "type": "int",
+            "required": "required",
+            "length": 10,
+            "remarks": "amount"
+          },
+          {
+            "name": "amtUsed",
+            "type": "int",
+            "required": "required",
+            "length": 10,
+            "remarks": "amount used"
+          },
+          {
+            "name": "bAddr1",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "billing address 1"
+          },
+          {
+            "name": "bAddr2",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "billing address 2"
+          },
+          {
+            "name": "bCity",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "billing city"
+          },
+          {
+            "name": "bEmail",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "billing email"
+          },
+          {
+            "name": "bMobile",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "billing mobile"
+          },
+          {
+            "name": "bName",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "billing name"
+          },
+          {
+            "name": "bPost",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "billing post"
+          },
+          {
+            "name": "bState",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "billing state"
+          },
+          {
+            "name": "bUserId",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "billing user id"
+          },
+          {
+            "name": "cardAmt",
+            "type": "int",
+            "required": "required",
+            "length": 10,
+            "remarks": "card amount"
+          },
+          {
+            "name": "cardAppDate",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "card application date"
+          },
+          {
+            "name": "cardAppNo",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "card application number"
+          },
+          {
+            "name": "cardAuth",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "card authorization"
+          },
+          {
+            "name": "cardCd",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "card code"
+          },
+          {
+            "name": "cardExpDate",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "card expiration date"
+          },
+          {
+            "name": "cardExpMonth",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "card expiration month"
+          },
+          {
+            "name": "cardExpYear",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "card expiration year"
+          },
+          {
+            "name": "cardHolder",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "card holder"
+          },
+          {
+            "name": "cardInstall",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "card installment"
+          },
+          {
+            "name": "cardNo",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "card number"
+          },
+          {
+            "name": "cardOwner",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "card owner"
+          },
+          {
+            "name": "cardPw",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "card password"
+          },
+          {
+            "name": "cardRate",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "card rate"
+          },
+          {
+            "name": "cardYYMM",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "card YYMM"
+          },
+          {
+            "name": "comId",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "company id"
+          },
+          {
+            "name": "comCd",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "company code"
+          },
+          {
+            "name": "cntCd",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "country code"
+          },
+          {
+            "name": "courierCd",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "courier code"
+          },
+          {
+            "name": "ctrCd",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "country code"
+          },
+          {
+            "name": "deliAmt",
+            "type": "int",
+            "required": "required",
+            "length": 10,
+            "remarks": "delivery amount"
+          },
+          {
+            "name": "deliKind",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "delivery kind"
+          },
+          {
+            "name": "kind",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "kind payment"
+          },
+          {
+            "name": "kindCD",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "kind code"
+          },
+          {
+            "name": "ordDate",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "order date"
+          },
+          {
+            "name": "ordNoTmp",
+            "type": "int",
+            "required": "required",
+            "length": 10,
+            "remarks": "order number temporary"
+          },
+          {
+            "name": "pathCD",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "path code"
+          },
+          {
+            "name": "pdtCd",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "product code"
+          },
+          {
+            "name": "pdtName",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "product name"
+          },
+          {
+            "name": "rAddr1",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "recipient address 1"
+          },
+          {
+            "name": "rAddr2",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "recipient address 2"
+          },
+          {
+            "name": "rAddr3",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "recipient address 3"
+          },
+          {
+            "name": "rCity",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "recipient city"
+          },
+          {
+            "name": "rEmail",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "recipient email"
+          },
+          {
+            "name": "rMobile",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "recipient mobile"
+          },
+          {
+            "name": "rName",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "recipient name"
+          },
+          {
+            "name": "rPost",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "recipient post"
+          },
+          {
+            "name": "rState",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "recipient state"
+          },
+          {
+            "name": "regDate",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "register date"
+          },
+          {
+            "name": "remark",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "remark"
+          },
+          {
+            "name": "stmtYN",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "statement"
+          },
+          {
+            "name": "userKindCd",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "user kind code"
+          },
+          {
+            "name": "userId",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "user id"
+          },
+          {
+            "name": "userType",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "user type"
+          },
+          {
+            "name": "username",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "user name"
+          },
+          {
+            "name": "workUser",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "work user"
+          }
+        ]
+      },
+      "example": {
+        "comCd": "02",
+        "comId": "MEDIUSJP",
+        "ordNoTmp": 27372,
+        "userid": "28614421",
+        "userType": "",
+        "kind": "02s03",
+        "regDate": "20250326",
+        "amt": 203500,
+        "cardAmt": 203500,
+        "amtUsed": 203500,
+        "remark": "",
+        "cardCd": "020",
+        "cardRate": "",
+        "cardInstall": "00",
+        "cardNo": "1111222233334444",
+        "cardHolder": "Nam123　Nguyen321",
+        "cardYYMM": "",
+        "expiryDate": "",
+        "cardExpDate": "",
+        "cardAppNo": "",
+        "cardAppDate": "20250326",
+        "cardPw": "",
+        "cardAuth": "",
+        "birthday": "",
+        "cardExpYear": "",
+        "cardExpMonth": "",
+        "cardOwner": "Nam123　Nguyen321",
+        "username": "Nam123　Nguyen321",
+        "deliKind": "DELI-M",
+        "deliAmt": 0,
+        "ordDate": "20250326",
+        "bName": "Nam123　Nguyen321",
+        "bMobile": "09-1234090-9",
+        "bEmail": "bannam2002@mailinator.com",
+        "bPost": "002-8024",
+        "bAddr1": "札幌市北区39-2",
+        "bAddr2": "abdadfasdf",
+        "bUserid": "28614421",
+        "bState": "北海道",
+        "bCity": "",
+        "rMemo": "",
+        "rName": "Nam123　Nguyen321",
+        "rMobile": "0912340909",
+        "rPost": "002-8024",
+        "rState": "北海道",
+        "rCity": "",
+        "rCounty": "",
+        "rAddr1": "札幌市北区39-2",
+        "rAddr2": "abdadfasdf",
+        "rAddr3": "",
+        "pdtCd": "032",
+        "accDate": "20250326",
+        "cntCd": "02001",
+        "courierCd": "02001",
+        "kindCd": "02O01",
+        "kindCD": "02O01",
+        "pathCd": "02T30",
+        "pathCD": "02T30",
+        "cashrcptType": "00",
+        "cashrcptNum": "",
+        "ctrCd": "JP",
+        "userKindCd": "U10",
+        "usedPoint": "0",
+        "workUser": "28614421",
+        "pdtName": "ケアブライト",
+        "stmtYn": "N",
+        "listPdtOption": {
+          "032": "アップグレード",
+          "f001": "アップグレード",
+          "007": "アップグレード"
+        },
+        "cardNumberId": ""
+      }
+    },
+    "output": {
+      "description": "Submit buy order",
+      "success": {
+        "status": "OK",
+        "message": "OrderModel",
+        "fields": [
+          {
+            "name": "retCode",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "The order status"
+          },
+          {
+            "name": "retStr",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "message notification to user" 
+          },
+          {
+            "name": "keyValue",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "is order number" 
+          }
+        ]
+      },
+      "error": [
+        {
+          "error-code":"401",
+          "message": "Invalid card number"
         }
       ]
     }
