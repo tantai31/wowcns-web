@@ -4384,5 +4384,1131 @@
         }
       ]
     }
+  },
+  {
+    "menu-parent": "Shopping",
+    "menu-name": "Shop",
+    "menu-desc": "List of products by category",
+    "input": {
+      "url": "https://yourcompany-api.com/api/product/search",
+      "method": "POST",
+      "content-type": "application/json",
+      "body": {
+        "fields": [
+          {
+            "name": "cateCd",
+            "type": "text",
+            "required": "required",
+            "length": 4,
+            "remarks": "Code of the catalog"
+          },
+          {
+            "name": "comId",
+            "type": "text",
+            "required": "required",
+            "length": 8,
+            "remarks": "The Id of company"
+          },
+          {
+            "name": "key",
+            "type": "text",
+            "required": "Optional",
+            "length": 50,
+            "remarks": "Search keyword"
+          },
+          {
+            "name": "page",
+            "type": "int",
+            "required": "Optional",
+            "length": 100,
+            "remarks": "number of pages of list(default 0)"
+          },
+          {
+            "name": "len",
+            "type": "int",
+            "required": "Optional",
+            "length": 100,
+            "remarks": "number of length of list(default 10)"
+          },
+          {
+            "name": "pathKind",
+            "type": "text",
+            "required": "required",
+            "length": 5,
+            "remarks": "Device type (PC / PHONE)"
+          },
+          {
+            "name": "sortCd",
+            "type": "text",
+            "required": "required",
+            "length": 1,
+            "remarks": "Sorting order of products (default: 0 / Registration order: 1/ By lowest price: 2 / By highest price: 3)"
+          },
+          {
+            "name": "userid",
+            "type": "text",
+            "required": "required",
+            "length": 10,
+            "remarks": "Member ID"
+          }
+        ]
+      },
+      "example": {
+        "cateCd": "0211",
+        "comId": "COMPANY",
+        "key": "",
+        "page": 0,
+        "len": 10,
+        "pathKind": "PC",
+        "sortCd": "0",
+        "userid": "01000000000"
+      }
+    },
+    "output": {
+      "notes": "Product List",
+      "success": {
+        "status": "OK",
+        "message": "",
+        "fields": [
+          {
+            "name": "ordNo",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Order number"
+          },
+          {
+            "name": "pdtCd",
+            "type": "text",
+            "required": "",
+            "length": 20,
+            "remarks": "Product code"
+          },
+          {
+            "name": "qty",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Quantity"
+          },
+          {
+            "name": "pdtSeq",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Product sequence"
+          },
+          {
+            "name": "ordYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": "Order confirmation (Y/N)"
+          },
+          {
+            "name": "deliSeq",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Delivery sequence"
+          },
+          {
+            "name": "userid",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "User ID"
+          },
+          {
+            "name": "pdtStatus",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "Product status"
+          },
+          {
+            "name": "pdtKind",
+            "type": "text",
+            "required": "",
+            "length": 20,
+            "remarks": "Product kind"
+          },
+          {
+            "name": "price",
+            "type": "int",
+            "required": "",
+            "length": 15,
+            "remarks": "Product price"
+          },
+          {
+            "name": "amt",
+            "type": "int",
+            "required": "",
+            "length": 15,
+            "remarks": "Total amount"
+          },
+          {
+            "name": "vat",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Value-added tax (VAT)"
+          },
+          {
+            "name": "pv1",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Product PV1"
+          },
+          {
+            "name": "pv2",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Product PV2"
+          },
+          {
+            "name": "pv3",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Product PV3"
+          },
+          {
+            "name": "point",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Product points"
+          },
+          {
+            "name": "pv1Percent",
+            "type": "int",
+            "required": "",
+            "length": 5,
+            "remarks": "PV1 Percentage"
+          },
+          {
+            "name": "pv2Percent",
+            "type": "int",
+            "required": "",
+            "length": 5,
+            "remarks": "PV2 Percentage"
+          },
+          {
+            "name": "fedEx_Sig",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "FedEx Signature"
+          },
+          {
+            "name": "status",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "Sales status (SALE : On sale / WAIT : Waiting for sale / STOP : Stopped sale / STOCK : out of stock)"
+          },
+          {
+            "name": "ordNoOrg",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Original order number"
+          },
+          {
+            "name": "ordDate",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "Order date"
+          },
+          {
+            "name": "accDate",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "Acceptance date"
+          },
+          {
+            "name": "canDate",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "Cancellation date"
+          },
+          {
+            "name": "cntNameOrd",
+            "type": "text",
+            "required": "",
+            "length": 100,
+            "remarks": "Center name"
+          },
+          {
+            "name": "username",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "User name"
+          },
+          {
+            "name": "userKindName",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "User Kind Name"
+          },
+          {
+            "name": "cntNameMem",
+            "type": "text",
+            "required": "",
+            "length": 100,
+            "remarks": "Center Name Member"
+          },
+          {
+            "name": "grpName",
+            "type": "text",
+            "required": "",
+            "length": 100,
+            "remarks": "Group Name"
+          },
+          {
+            "name": "rid",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Recommender Code"
+          },
+          {
+            "name": "rname",
+            "type": "text",
+            "required": "",
+            "length": 100,
+            "remarks": "Recommender name"
+          },
+          {
+            "name": "omniYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": "Whether or not it is a consumer order (Y/N)"
+          },
+          {
+            "name": "countryName",
+            "type": "text",
+            "required": "",
+            "length": 100,
+            "remarks": "Country Name"
+          },
+          {
+            "name": "kindName",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Kind Name"
+          },
+          {
+            "name": "pathName",
+            "type": "text",
+            "required": "",
+            "length": 100,
+            "remarks": "Path Name"
+          },
+          {
+            "name": "cateCD",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "Category Code"
+          },
+          {
+            "name": "cateName",
+            "type": "text",
+            "required": "",
+            "length": 100,
+            "remarks": "Category Name"
+          },
+          {
+            "name": "pdtName",
+            "type": "text",
+            "required": "",
+            "length": 100,
+            "remarks": "Product Name"
+          },
+          {
+            "name": "pdtNameOrg",
+            "type": "text",
+            "required": "",
+            "length": 100,
+            "remarks": "Original Product Name"
+          },
+          {
+            "name": "barcode",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Barcode"
+          },
+          {
+            "name": "bomyn",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": "BOM (Y/N)"
+          },
+          {
+            "name": "packageYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": "Package (Y/N)"
+          },
+          {
+            "name": "pdtOption",
+            "type": "text",
+            "required": "",
+            "length": 100,
+            "remarks": "Product Option"
+          },
+          {
+            "name": "option1",
+            "type": "text",
+            "required": "",
+            "length": 100,
+            "remarks": "Option 1"
+          },
+          {
+            "name": "option2",
+            "type": "text",
+            "required": "",
+            "length": 100,
+            "remarks": "Option 2"
+          },
+          {
+            "name": "option3",
+            "type": "text",
+            "required": "",
+            "length": 100,
+            "remarks": "Option 3"
+          },
+          {
+            "name": "sumPrice",
+            "type": "int",
+            "required": "",
+            "length": 15,
+            "remarks": "Sum Price"
+          },
+          {
+            "name": "sumVAT",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Sum VAT"
+          },
+          {
+            "name": "sumAmt",
+            "type": "int",
+            "required": "",
+            "length": 15,
+            "remarks": "Sum Amount"
+          },
+          {
+            "name": "sumPv1",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Sum PV1"
+          },
+          {
+            "name": "sumPv2",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Sum PV2"
+          },
+          {
+            "name": "sumPv3",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Sum PV3"
+          },
+          {
+            "name": "sumPoint",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Sum Point"
+          },
+          {
+            "name": "qtyPP",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Quantity (Shipping Instruction)"
+          },
+          {
+            "name": "qtyStk",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Quantity (Shipping Completed)"
+          },
+          {
+            "name": "pdtIOKind",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Product Status"
+          },
+          {
+            "name": "serialNO",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Serial Number"
+          },
+          {
+            "name": "remark",
+            "type": "text",
+            "required": "",
+            "length": 255,
+            "remarks": "Remark"
+          },
+          {
+            "name": "workDate",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "Work Date"
+          },
+          {
+            "name": "filePath",
+            "type": "text",
+            "required": "",
+            "length": 255,
+            "remarks": "File Path"
+          },
+          {
+            "name": "fileName",
+            "type": "text",
+            "required": "",
+            "length": 255,
+            "remarks": "File Name"
+          },
+          {
+            "name": "fileNameOrg",
+            "type": "text",
+            "required": "",
+            "length": 255,
+            "remarks": "Original File Name"
+          },
+          {
+            "name": "filePathHover",
+            "type": "text",
+            "required": "",
+            "length": 255,
+            "remarks": "File Path Hover"
+          },
+          {
+            "name": "fileNameHover",
+            "type": "text",
+            "required": "",
+            "length": 255,
+            "remarks": "File Name Hover"
+          },
+          {
+            "name": "fileNameOrgHover",
+            "type": "text",
+            "required": "",
+            "length": 255,
+            "remarks": "Original File Name Hover"
+          },
+          {
+            "name": "linkInfo",
+            "type": "text",
+            "required": "",
+            "length": 255,
+            "remarks": "Link Info"
+          },
+          {
+            "name": "newSDate",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "New Start Date"
+          },
+          {
+            "name": "newEDate",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "New End Date"
+          },
+          {
+            "name": "recomnSDate",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "Recommendation Start Date"
+          },
+          {
+            "name": "recomnEDate",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "Recommendation End Date"
+          },
+          {
+            "name": "eventSDate",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "Event Start Date"
+          },
+          {
+            "name": "eventEDate",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "Event End Date"
+          },
+          {
+            "name": "saleSdate",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "Sale Start Date"
+          },
+          {
+            "name": "saleEdate",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "Sale End Date"
+          },
+          {
+            "name": "usernameKana",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Username Kana"
+          },
+          {
+            "name": "usernameEng",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Username English"
+          },
+          {
+            "name": "rcptYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": "Receipt (Y/N)"
+          },
+          {
+            "name": "retailAmt",
+            "type": "int",
+            "required": "",
+            "length": 15,
+            "remarks": "Retail Amount"
+          },
+          {
+            "name": "retailVat",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Retail VAT"
+          },
+          {
+            "name": "retailPrice",
+            "type": "int",
+            "required": "",
+            "length": 15,
+            "remarks": "Retail Price"
+          },
+          {
+            "name": "pcateCD",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "Product Category Code"
+          },
+          {
+            "name": "total",
+            "type": "int",
+            "required": "",
+            "length": 15,
+            "remarks": "Total"
+          },
+          {
+            "name": "rate",
+            "type": "int",
+            "required": "",
+            "length": 5,
+            "remarks": "Rate"
+          },
+          {
+            "name": "ordNoTmp",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Temporary Order Number"
+          },
+          {
+            "name": "invoiceNo",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Invoice Number"
+          },
+          {
+            "name": "pcateName",
+            "type": "text",
+            "required": "",
+            "length": 100,
+            "remarks": "Product Category Name"
+          },
+          {
+            "name": "pcateCd",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "Product Category CD"
+          },
+          {
+            "name": "deliKindName",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Delivery Kind Name"
+          },
+          {
+            "name": "retailPoint",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Retail Point"
+          },
+          {
+            "name": "saleMinQty",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Sale Minimum Quantity"
+          },
+          {
+            "name": "saleMaxQty",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Sale Maximum Quantity"
+          },
+          {
+            "name": "sumPdtCnt",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Sum Product Count"
+          },
+          {
+            "name": "retCode",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Return Code"
+          },
+          {
+            "name": "retStr",
+            "type": "text",
+            "required": "",
+            "length": 255,
+            "remarks": "Return String"
+          },
+          {
+            "name": "comId",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Company ID"
+          },
+          {
+            "name": "workUser",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Work User"
+          },
+          {
+            "name": "ordAmt",
+            "type": "int",
+            "required": "",
+            "length": 15,
+            "remarks": "Order Amount"
+          },
+          {
+            "name": "ordPv1",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Order PV1"
+          },
+          {
+            "name": "ordPv2",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Order PV2"
+          },
+          {
+            "name": "ordPv3",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Order PV3"
+          },
+          {
+            "name": "ordPoint",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Order Points"
+          },
+          {
+            "name": "sumPdtQty",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Sum Product Quantity"
+          },
+          {
+            "name": "deliAmt",
+            "type": "int",
+            "required": "",
+            "length": 15,
+            "remarks": "Delivery Amount"
+          },
+          {
+            "name": "totalAmt",
+            "type": "int",
+            "required": "",
+            "length": 15,
+            "remarks": "Total Amount"
+          },
+          {
+            "name": "staffAmt",
+            "type": "int",
+            "required": "",
+            "length": 15,
+            "remarks": "Staff Amount"
+          },
+          {
+            "name": "ordStaffAmt",
+            "type": "int",
+            "required": "",
+            "length": 15,
+            "remarks": "Order Staff Amount"
+          },
+          {
+            "name": "wishYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": "Wish (Y/N)"
+          },
+          {
+            "name": "bestSdate",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "Best Start Date"
+          },
+          {
+            "name": "bestEdate",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "Best End Date"
+          },
+          {
+            "name": "brandHallSdate",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "Brand Hall Start Date"
+          },
+          {
+            "name": "brandHallEdate",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "Brand Hall End Date"
+          },
+          {
+            "name": "reviewsCnt",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Reviews Count"
+          },
+          {
+            "name": "grades",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Grades"
+          },
+          {
+            "name": "rating",
+            "type": "int",
+            "required": "",
+            "length": 5,
+            "remarks": "Rating"
+          },
+          {
+            "name": "pdtImageRemark",
+            "type": "text",
+            "required": "",
+            "length": 255,
+            "remarks": "Product Image Remark"
+          },
+          {
+            "name": "hashTag",
+            "type": "text",
+            "required": "",
+            "length": 255,
+            "remarks": "Hash Tag"
+          },
+          {
+            "name": "adoYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": "ADO (Y/N)"
+          },
+          {
+            "name": "reviews",
+            "type": "text",
+            "required": "",
+            "length": 255,
+            "remarks": "Reviews"
+          },
+          {
+            "name": "saleYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": "Sale (Y/N)"
+          },
+          {
+            "name": "adoMinQty",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "ADO Minimum Quantity"
+          },
+          {
+            "name": "adoMaxQty",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "ADO Maximum Quantity"
+          },
+          {
+            "name": "flag",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Flag"
+          },
+          {
+            "name": "boardNo",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Board Number"
+          },
+          {
+            "name": "magazineNo",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Magazine Number"
+          },
+          {
+            "name": "converType",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Conversion Type"
+          },
+          {
+            "name": "kindCrown",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Kind Crown"
+          },
+          {
+            "name": "newYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": "New (Y/N)"
+          },
+          {
+            "name": "eventYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": "Event (Y/N)"
+          },
+          {
+            "name": "hotSaleYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": "Hot Sale (Y/N)"
+          },
+          {
+            "name": "bestYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": "Best (Y/N)"
+          },
+          {
+            "name": "recommYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": "Recommended (Y/N)"
+          },
+          {
+            "name": "brandHallYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": "Brand Hall (Y/N)"
+          },
+          {
+            "name": "jointStr",
+            "type": "text",
+            "required": "",
+            "length": 255,
+            "remarks": "Joint String"
+          },
+          {
+            "name": "hotSaleSdate",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "Hot Sale Start Date"
+          },
+          {
+            "name": "hotSaleEdate",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "Hot Sale End Date"
+          },
+          {
+            "name": "rateAmtRetail",
+            "type": "int",
+            "required": "",
+            "length": 15,
+            "remarks": "Rate Amount Retail"
+          },
+          {
+            "name": "supplyAmt",
+            "type": "int",
+            "required": "",
+            "length": 15,
+            "remarks": "Supply Amount"
+          },
+          {
+            "name": "countPoint",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Count Point"
+          },
+          {
+            "name": "cateNameOrg",
+            "type": "text",
+            "required": "",
+            "length": 100,
+            "remarks": "Category Name Original"
+          },
+          {
+            "name": "amtPoint",
+            "type": "int",
+            "required": "",
+            "length": 15,
+            "remarks": "Amount Point"
+          },
+          {
+            "name": "workKind",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Work Kind"
+          },
+          {
+            "name": "stockYn",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": "Stock (Y/N)"
+          },
+          {
+            "name": "pdtQty",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Product Quantity"
+          },
+          {
+            "name": "availableYN",
+            "type": "text",
+            "required": "",
+            "length": 1,
+            "remarks": "Available (Y/N)"
+          },
+          {
+            "name": "checkDeliAmt",
+            "type": "int",
+            "required": "",
+            "length": 15,
+            "remarks": "Check Delivery Amount"
+          },
+          {
+            "name": "staffPrice",
+            "type": "int",
+            "required": "",
+            "length": 15,
+            "remarks": "Staff Price"
+          },
+          {
+            "name": "staffVat",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Staff VAT"
+          },
+          {
+            "name": "rn",
+            "type": "int",
+            "required": "",
+            "length": 10,
+            "remarks": "Page Number"
+          }
+        ]
+      }
+    },
+    "error": "null"
   }
 ]
