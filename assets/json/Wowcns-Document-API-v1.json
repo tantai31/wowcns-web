@@ -3283,5 +3283,488 @@
       },
       "error": "null"
     }
+  },
+  {
+    "menu-parent": "Checkout",
+    "menu-name": "load card information",
+    "menu-desc": "Display product information about to buy",
+    "input": {
+      "description": "load card information",
+      "url": "{{host}}/api/ordreg/load-card-info",
+      "method": "POST",
+      "content-type": "application/json",
+      "body": {
+        "fields": [
+          {
+            "name": "comId",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "Company ID"
+          },
+          {
+            "name": "area",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "Area or Region"
+          },
+          {
+            "name": "ctrCd",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "Contry Code"
+          },
+          {
+            "name": "lang",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "language"
+          },
+          {
+            "name": "storeCd",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "stote code"
+          },
+          {
+            "name": "userId",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "User ID"
+          }
+        ]
+      },
+      "example": {
+        "comId": "{{comId}}",
+        "lang": "JP",
+        "userId": "{{userId}}",
+        "ctrCd": "JP",
+        "area": "",
+        "storeCd": "{{storeCd}}"
+      }
+    },
+    "output": {
+      "description": "",
+      "success": {
+        "status": "Ok",
+        "message": "Success",
+        "fields ": [
+          {
+            "name": "userid",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "cusstomerId of the customer"
+          },
+          {
+            "name": "ordDate",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "order date"
+          },
+          {
+            "name": "cntNameOrd",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "Name of  the person placing the order"
+          },
+          {
+            "name": "username",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "name of the customer"
+          },
+          {
+            "name": "ordNoTmp",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "terporary order number"
+          },
+          {
+            "name": "ordAmt",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "total order amount"
+          },
+          {
+            "name": "ordPv1",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "level 1 reward point"
+          },
+          {
+            "name": "ordPv2",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "level 2 reward point"
+          },
+          {
+            "name": "ordPv3",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "level 3 reward point"
+          },
+          {
+            "name": "sumPdtQty",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "total quantity of the order"
+          },
+          {
+            "name": "deliAmt",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "shipping amount"
+          },
+          {
+            "name": "totalAmt",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "total amount"
+          }
+        ]
+      },
+      "error": [
+        {
+          "error-code": "401",
+          "message": ""
+        }
+      ]
+    }
+  },
+  {
+    "menu-parent": "Checkout",
+    "menu-name": "load card information",
+    "menu-desc": "Display product information about to buy",
+    "input": {
+      "description": "load card information",
+      "url": "{{host}}/api/ordreg/tmp-save",
+      "method": "POST",
+      "content-type": "application/json",
+      "body": {
+        "fields": [
+          {
+            "name": "comId",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "Company ID"
+          },
+          {
+            "name": "cntCd",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "contry code"
+          },
+          {
+            "name": "directYN",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "direct or not"
+          },
+          {
+            "name": "lang",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "language"
+          },
+          {
+            "name": "pathCD",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "definition order path code"
+          },
+          {
+            "name": "pdtCd",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "product code"
+          },
+          {
+            "name": "qty",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "quantity buy product"
+          },
+          {
+            "name": "userKindCd",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "kind of user ex : member, cunsumer"
+          },
+          {
+            "name": "userid",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "User ID"
+          },
+          {
+            "name": "workKind",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "from myoffice"
+          },
+          {
+            "name": "workUser",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "User ID"
+          }
+        ]
+      },
+      "example": {
+        "comId": "{{comId}}",
+        "userid": "{{userId}}",
+        "userKindCd": "U10",
+        "cntCd": "02001",
+        "pathCD": "02T30",
+        "pdtCd": "032",
+        "qty": 1,
+        "workUser": "{{userId}}",
+        "workKind": "M",
+        "directYN": "Y",
+        "lang": "JP"
+      }
+    },
+    "output": {
+      "description": "",
+      "success": {
+        "status": "Ok",
+        "message": "Success",
+        "fields ": [
+          {
+            "name": "retCode",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "status action (OK or ERROR)"
+          },
+          {
+            "name": "retStr",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "message notification to user"
+          },
+          {
+            "name": "keyValue",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "temporary order number"
+          }
+        ]
+      },
+      "error": [
+        {
+          "error-code": "401",
+          "message": ""
+        }
+      ]
+    }
+  },
+  {
+    "menu-parent": "Checkout",
+    "menu-name": "product information purchase",
+    "menu-desc": "Display product information about to buy",
+    "input": {
+      "description": "load card information",
+      "url": "{{host}}/api/ordreg/cart-list?comid={{comId}}&userid={{userid}}",
+      "method": "GET",
+      "content-type": "application/json",
+      "body": {
+        "fields": [
+          {
+            "name": "comid",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "Company ID"
+          },
+          {
+            "name": "userid",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "User ID"
+          }
+        ]
+      },
+      "example": ""
+    },
+    "output": {
+      "description": "list of products to buy",
+      "success": {
+        "status": "Ok",
+        "message": "OrdPdtModel []",
+        "fields ": [
+          {
+            "name": "pdtCd",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "product code"
+          },
+          {
+            "name": "qty",
+            "type": "int",
+            "required": "required",
+            "length": 10,
+            "remarks": "quantity of product"
+          },
+          {
+            "name": "pdtSeq",
+            "type": "int",
+            "required": "required",
+            "length": 10,
+            "remarks": "product sequence"
+          },
+          {
+            "name": "userid",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "User ID"
+          },
+          {
+            "name": "pdtStatus",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "product status"
+          },
+          {
+            "name": "pdtKind",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "product kind"
+          },
+          {
+            "name": "price",
+            "type": "int",
+            "required": "required",
+            "length": 10,
+            "remarks": "product price"
+          },
+          {
+            "name": "amt",
+            "type": "int",
+            "required": "required",
+            "length": 10,
+            "remarks": "product amount"
+          },
+          {
+            "name": "vat",
+            "type": "int",
+            "required": "required",
+            "length": 10,
+            "remarks": "product vat"
+          },
+          {
+            "name": "pv1",
+            "type": "int",
+            "required": "required",
+            "length": 10,
+            "remarks": "product pv1"
+          },
+          {
+            "name": "pv2",
+            "type": "int",
+            "required": "required",
+            "length": 10,
+            "remarks": "product pv2"
+          },
+          {
+            "name": "pv3",
+            "type": "int",
+            "required": "required",
+            "length": 10,
+            "remarks": "product pv3"
+          },
+          {
+            "name": "pdtName",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "product name"
+          },
+          {
+            "name": "pdtOption",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "product option"
+          },
+          {
+            "name": "filePath",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "file path"
+          },
+          {
+            "name": "fileName",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "file name"
+          },
+          {
+            "name": "fileNameOrg",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "original file name"
+          },
+          {
+            "name": "retailAmt",
+            "type": "int",
+            "required": "required",
+            "length": 10,
+            "remarks": "retail amount"
+          },
+          {
+            "name": "ordNoTmp",
+            "type": "text",
+            "required": "required",
+            "length": 50,
+            "remarks": "temporary order number"
+          }
+        ]
+      },
+      "error": [
+        {
+          "error-code": "401",
+          "message": ""
+        }
+      ]
+    }
   }
 ]
