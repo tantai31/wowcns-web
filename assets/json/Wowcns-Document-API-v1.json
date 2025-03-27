@@ -6624,5 +6624,82 @@
       }
     },
     "error": "null"
+  },
+  {
+	"menu-parent": "Shopping-Mall",
+	"menu-name": "Product Notify",
+	"menu-desc": "Product Notification Information",
+	"input": {
+		"url": "https://yourcompany-api.com/api/product/info-notify?comId={{comId}}&pdtCd={{pdtCd}}",
+		"method": "GET",
+		"content-type": "application/json",
+		"body": {
+			"fields": [
+          {
+            "name": "comId",
+            "type": "text",
+            "required": "required",
+            "length": 8,
+            "remarks": "Company ID"
+          },
+          {
+            "name": "pdtCd",
+            "type": "text",
+            "required": "required",
+            "length": 20,
+            "remarks": "Product Code"
+          }
+        ]
+      },
+      "example": {
+        "comId": "Company ID",
+        "pdtCd": "Product Code"
+      }
+    },
+    "output": {
+      "notes": "Product Notification Information",
+      "success": {
+        "status": "OK",
+        "message": "PdtDetailModel []",
+        "fields": [
+          {
+            "name": "seq",
+            "type": "int",
+            "required": "",
+            "length": "",
+            "remarks": "Notification sort order"
+          },
+          {
+            "name": "notifyNo",
+            "type": "text",
+            "required": "",
+            "length": 10,
+            "remarks": "Notification Number"
+          },
+          {
+            "name": "kindName",
+            "type": "text",
+            "required": "",
+            "length": 50,
+            "remarks": "Kind of notification"
+          },
+          {
+            "name": "notifyName",
+            "type": "text",
+            "required": "",
+            "length": 90,
+            "remarks": "Notification name"
+          },
+          {
+            "name": "notifyTexts",
+            "type": "text",
+            "required": "",
+            "length": 90,
+            "remarks": "Detailed content of the notification"
+          }
+        ]
+      }
+    },
+    "error": "null"
   }
 ]
