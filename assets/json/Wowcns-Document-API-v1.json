@@ -5513,8 +5513,8 @@
   },
   {
     "menu-parent": "Shopping-Mall",
-    "menu-name": "Product",
-    "menu-desc": "Product details",
+    "menu-name": "Product Details",
+    "menu-desc": "Product Information",
     "input": {
   	"url": "https://yourcompany-api.com/api/product/info?comId={{comId}}&pdtCd={{pdtCd}}",
         "method": "GET",
@@ -6066,8 +6066,8 @@
   },
   {
     "menu-parent": "Shopping-Mall",
-    "menu-name": "Product",
-    "menu-desc": "Product details",
+    "menu-name": "Product Image",
+    "menu-desc": "Product Detail Image",
     "input": {
       "url": "https://yourcompany-api.com/api/product/info-image?comId={{comId}}&pdtCd={{pdtCd}}&pathKind={{pathKind}}",
       "method": "GET",
