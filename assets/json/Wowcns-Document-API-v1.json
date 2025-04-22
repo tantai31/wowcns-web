@@ -11451,7 +11451,6 @@
         "status": "OK",
         "message": "Query executed successfully",
         "fields": [
-          [
             {
               "name": "rankCd",
               "type": "text",
@@ -11566,7 +11565,6 @@
               "length": 255,
               "remarks": "File path for the rank icon or related asset (e.g., image file)"
             }
-          ]
         ]
       }
     }
