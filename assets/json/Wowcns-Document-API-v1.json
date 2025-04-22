@@ -1,7 +1,7 @@
 [
   {
     "menu-parent": "Member",
-    "menu-name": "CreateMember",
+    "menu-name": "Create Member",
     "menu-desc": "Creates a new Member.",
     "input": {
       "description": "You must be logged in to create a member.",
@@ -485,7 +485,7 @@
   },
   {
     "menu-parent": "Member",
-    "menu-name": "MemberSearch",
+    "menu-name": "Member Search",
     "menu-desc": "Search List Member.",
     "input": {
       "description": "You must be logged in to create a member.",
@@ -648,7 +648,7 @@
   },
   {
     "menu-parent": "Member",
-    "menu-name": "SearchByRank",
+    "menu-name": "Search By Rank",
     "menu-desc": "Search By Rank",
     "input": {
       "description": "You must be logged.",
@@ -819,7 +819,7 @@
   },
   {
     "menu-parent": "Member",
-    "menu-name": "LineGenealogyMap",
+    "menu-name": "Line Genealogy Map",
     "menu-desc": "Line Genealogy Map",
     "input": {
       "description": "You must be logged.",
@@ -998,7 +998,7 @@
   },
   {
     "menu-parent": "Member",
-    "menu-name": "BoxGenealogyMap",
+    "menu-name": "Box Genealogy Map",
     "menu-desc": "Box Genealogy Map",
     "input": {
       "description": "You must be logged.",
@@ -1188,7 +1188,7 @@
   },
   {
     "menu-parent": "Member",
-    "menu-name": "AggregatebyRank",
+    "menu-name": "Aggregate by Rank",
     "menu-desc": "Aggregate by Rank",
     "input": {
       "description": "You must be logged.",
@@ -1255,7 +1255,7 @@
   },
   {
     "menu-parent": "Member",
-    "menu-name": "MonthlyEnrollmentCounting",
+    "menu-name": "Monthly Enrollment Counting",
     "menu-desc": "Monthly Enrollment Counting",
     "input": {
       "description": "You must be logged.",
@@ -1421,7 +1421,7 @@
   },
   {
     "menu-parent": "Member",
-    "menu-name": "AggregatebyAge",
+    "menu-name": "Aggregate by Age",
     "menu-desc": "Aggregate by Age",
     "input": {
       "description": "You must be logged.",
@@ -8931,7 +8931,7 @@
   },
   {
     "menu-parent": "User Profile",
-    "menu-name": "FindMember",
+    "menu-name": "Find Member",
     "menu-desc": "Retrieves member details based on company ID and user ID.",
     "input": {
       "description": "This API retrieves detailed member information based on company ID and user ID.",
@@ -9344,7 +9344,7 @@
   },
   {
     "menu-parent": "User Profile",
-    "menu-name": "ChangeBankAccount",
+    "menu-name": "Change Bank Account",
     "menu-desc": "Changes the bank account details of a member.",
     "input": {
       "description": "This API allows members to update their bank account details.",
@@ -9484,7 +9484,7 @@
   },
   {
     "menu-parent": "User Profile",
-    "menu-name": "UpdatePassword",
+    "menu-name": "Update Password",
     "menu-desc": "Updates the password of a member in the system.",
     "input": {
       "description": "This API updates the password of a member based on their company ID and user ID.",
@@ -9652,7 +9652,7 @@
   },
   {
     "menu-parent": "Bonus",
-    "menu-name": "SearchBonusDetailByUser",
+    "menu-name": "Search Bonus Detail By User",
     "menu-desc": "Retrieves bonus benefit details based on the given criteria.",
     "input": {
       "description": "This API retrieves bonus summaries based on the specified criteria, including company ID, user ID, summary type (monthly or yearly), and optional date range.",
@@ -9753,7 +9753,7 @@
   },
   {
     "menu-parent": "Bonus",
-    "menu-name": "SearchBonusAccountingInquiry",
+    "menu-name": "Search Bonus Accounting Inquiry",
     "menu-desc": "Displays bonus payment details by month based on the selected criteria for a specific user",
     "input": {
       "description": "This API allows users to search for bonus payment records by specifying a company ID, user ID, and date range. Users can filter results based on monthly or yearly summaries. The response supports pagination for efficient data retrieval.",
@@ -9851,7 +9851,7 @@
   },
   {
     "menu-parent": "Bonus",
-    "menu-name": "GetBonusCalendar",
+    "menu-name": "Get Bonus Calendar",
     "menu-desc": "Retrieves benefit calendar details for a specific company and user.",
     "input": {
       "description": "The getBenefitCalendar API retrieves benefit-related data for a user based on the specified company, user ID, and month. This API is used to populate the benefit calendar with relevant information.",
@@ -9927,7 +9927,7 @@
   },
   {
     "menu-parent": "Bonus",
-    "menu-name": "GetBonusAnalysisGrid",
+    "menu-name": "Get Bonus Analysis Grid",
     "menu-desc": "Retrieves bonus analysis details for a specific company, user, and year.",
     "input": {
       "description": "The bonusAnalysicGird API retrieves a detailed analysis of bonuses received by a user within a specified year. The data is aggregated by month and categorized by different bonus types, providing a comprehensive view of total earnings for each period.",
@@ -10001,7 +10001,7 @@
   },
   {
     "menu-parent": "Bonus",
-    "menu-name": "GetBonusAnalysicGirdSum",
+    "menu-name": "Get Bonus Analysic Gird Sum",
     "menu-desc": "Retrieves a summary of bonus amounts for a specific company and user.",
     "input": {
       "description": "The bonusAnalysicGirdSum API retrieves the total bonus amounts categorized by different types for a user in a given year.",
@@ -10062,7 +10062,7 @@
   },
   {
     "menu-parent": "Bonus",
-    "menu-name": "GetBonusAnalysisChart",
+    "menu-name": "Get Bonus Analysis Chart",
     "menu-desc": "Retrieves a summary of bonus payments for a specific company and user in a given year, including payment types, total amounts, highest received payment, and percentage distribution.",
     "input": {
       "description": "The bonusAnalysicChart1 API retrieves the distribution of bonus amounts for a specific user in a given year, categorized by payment types. It provides total amounts, the highest received payment, and percentage distribution of each bonus type.",
@@ -10133,7 +10133,7 @@
   },
   {
     "menu-parent": "Bonus",
-    "menu-name": "GetMonthlyBonusSummary",
+    "menu-name": "Get Monthly Bonus Summary",
     "menu-desc": "Retrieves the highest monthly bonus amount for a specific company and user in a given year, ensuring all months are represented.",
     "input": {
       "description": "The bonusAnalysicChart3 API retrieves the highest bonus amount distributed per month for a user in a given year, ensuring all months are included in the response.",
@@ -10199,7 +10199,7 @@
   },
   {
     "menu-parent": "Bonus",
-    "menu-name": "GetTitlePayBonus",
+    "menu-name": "Get Title Pay Bonus",
     "menu-desc": "Retrieves the list of available pay titles for a given company.",
     "input": {
       "description": "The TitlePay API fetches the pay names and codes associated with a company.",
@@ -11003,7 +11003,7 @@
   },
   {
     "menu-parent": "Common",
-    "menu-name": "CONFIG",
+    "menu-name": "Config",
     "menu-desc": "Configuration Infomation",
     "input": {
       "url": "https://yourcompany-api.com/api/config/{{comId}}",
