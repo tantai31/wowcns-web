@@ -10656,8 +10656,8 @@
   },
   {
     "menu-parent": "Common",
-    "menu-name": "Center",
-    "menu-desc": "List of Centers",
+    "menu-name": "Bank",
+    "menu-desc": "List of Bank",
     "input": {
       "url": "https://yourcompany-api.com/api/bank/search?comId={{comId}}&kind={{kind}}",
       "method": "GET",
