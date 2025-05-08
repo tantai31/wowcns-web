@@ -107,7 +107,7 @@ element.style {
 		color: #fff;
 	}
 	.main-footer .category-select a:hover {
-		color: rgba(0,0,0,1);
+		color: rgb(255, 255, 255);
 	}
 	.main-footer .category-select .container, 
 	.main-footer .copyright .container {

@@ -975,7 +975,11 @@ div.marquee>a>img {
     text-align: center;
     transition: background 0.3s;
 }
-
+.table-dark th, .table-dark tr{
+    font-size: 18px;
+    font-weight: 400;
+    word-break: auto-phrase;
+}
 .tab-item:hover {
     background-color: #1abc9c;
 }
@@ -1358,6 +1362,11 @@ div.marquee>a>img {
     }
     .sidebar-item img {
         width: 48px;
+    }
+    .table-dark th, .table-dark tr{
+        font-size: 14px;
+        font-weight: 400;
+        word-break: auto-phrase;
     }
 }
 @media (max-width: 767px) {
