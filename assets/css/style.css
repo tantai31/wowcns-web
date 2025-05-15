@@ -901,8 +901,13 @@ div.marquee>a>img {
     color: #fff;
 }
 .menu-item:hover {
-    background-color: #34495e;
+    /* background-color: #34495e; */
 }
+.list-group-item+.list-group-item, .list-group-item:first-child  {
+    font-size: 14px;
+    color: #517aa8;
+}
+
 .list-group-item.active {
     z-index: 2;
     color: #287AA8;
@@ -975,13 +980,14 @@ div.marquee>a>img {
     text-align: center;
     transition: background 0.3s;
 }
-.table-dark th, .table-dark tr{
-    font-size: 18px;
-    font-weight: 400;
-    word-break: auto-phrase;
-}
 .tab-item:hover {
     background-color: #1abc9c;
+}
+tbody, td, tfoot, th, thead, tr {
+    word-break: auto-phrase;
+}
+.table-striped td{
+    font-size: 15px;
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
 	.text-staff-big {
